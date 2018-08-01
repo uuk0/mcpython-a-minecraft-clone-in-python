@@ -37,6 +37,8 @@ def _getFullFile(file): #input splitted by "."
         pass
 
 def _getLocalFile(file, debug=False): #output splitted by "/"
+    if file.startswith("./"):
+        return file[1:]
     rd = None
     for d in sys.path:
         if file.startswith(d):
