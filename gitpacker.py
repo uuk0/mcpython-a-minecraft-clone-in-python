@@ -160,22 +160,23 @@ def pack(file, out, res=[], not_res=[], not_res_end=[], version=0, name="", loca
             if os.path.getsize(out+"/file_"+str(file_id)+".spart") >= MAX_SIZE:
                 file_id += 1
             
-def pack_mcpython():
-    for e in os.listdir("."):
-        if os.path.isfile(e) and e.endswith(".spart"):
-            os.remove(e)
-    pack(["./__main__.py"],
-                ".", res=["./assets", "./config.txt", "./initscript.txt",
-               "./exceptions.txt",
-              "./version.info", "./mods/creatmcmodinfo.py",
-              "./mods/mcpython_moduls",
-              "./mods/mcpython", "./saves/dir.txt",
-                                               "./mods/mcpython/mcpython.py", "./mods/mcpython_moduls/modulinit.py"],
-         not_res=["./assets/unused", "./assets/textures/todo"],
+def pack_mcpython(f=".", to=".", version=None):
+    if not version: version = int(input("select an version-id: "))
+    for e in os.listdir(to):
+        if os.path.isfile(to+"/"+e) and e.endswith(".spart"):
+            os.remove(to+"/"+e)
+    pack([f+"/__main__.py"],
+                to, res=[f+"/assets", f+"/config.txt", f+"/initscript.txt",
+               f+"/exceptions.txt",
+               f+"/version.info", f+"/mods/creatmcmodinfo.py",
+              f+"/mods/mcpython_moduls",
+              f+"/mods/mcpython", f+"/saves/dir.txt",
+                                               f+"/mods/mcpython/mcpython.py", f+"/mods/mcpython_moduls/modulinit.py"],
+         not_res=[f+"/assets/unused", f+"/assets/textures/todo"],
          not_res_end=[".pyc", ".xml"],
-         version=int(input("select an version-id: ")),
+         version=version,
          name="mcpython",
-         local=["./mods/mcpython", "./mods/mcpython_moduls"], syspath=sys.path[:])
+         local=[f+"/mods/mcpython", f+"/mods/mcpython_moduls"], syspath=sys.path[:])
 
 def unpack():
     for e in os.listdir("."):
@@ -184,8 +185,30 @@ def unpack():
                f.extractall(".")
         print(e)
 
+def backup(tmpdir, to):
+    pack_mcpython(f="C:/Python/mcpython/mcpython_3", to=tmpdir, version=int(time.time()))
+    file = zipfile.ZipFile(to, mode="w")
+    for f in os.listdir(tmpdir):
+        file.write(tmpdir+"/"+f, arcname=f)
+    file.write("./gitpacker.py")
+    file.close()
+
+def auto_backup():
+    sys.path.append("C:/Python/mcpython/mcpython_3")
+    while True:
+        for e in os.listdir("C:/Python/mcpython/tmp"):
+            if os.path.isfile("C:/Python/mcpython/tmp/"+e) and e.endswith(".spart"):
+                os.remove("C:/Python/mcpython/tmp/"+e)
+        backup("C:/Python/mcpython/tmp", "C:/Python/mcpython/files/backups/"+str(time.time())+".zip")
+        time.sleep(10)
+    
+
 if len(sys.argv) > 1:
     if sys.argv[1] == "unpack":
         unpack()
     elif sys.argv[1] == "pack":
         pack_mcpython()
+    elif sys.argv[1] == "backup":
+        backup(*sys.argv[2:])
+    elif sys.argv[1] == "autobackup":
+        auto_backup()
