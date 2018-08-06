@@ -14,7 +14,7 @@ BUILD_IN = ["__future__", "sys", "math", "traceback", "time", "os", "random", "p
             "parser", "importlib", "dummy_threading", "html"]
 FILE_ENDINGS = ["", ".py", ".pyc", ".png"]
 
-MAX_SIZE = 10 * 1024 * 1024 #THES SIZE IS OPTIMIZED FOR MCPYTHON. real size: 25 * 1024 * 1024
+MAX_SIZE = 1024 * 1024 #THES SIZE IS OPTIMIZED FOR MCPYTHON. real size: 25 * 1024 * 1024
 
 def _getDir(file): #splitted by /
     file = file.split("/")[:-1]
@@ -171,7 +171,8 @@ def pack_mcpython(f=".", to=".", version=None):
                f+"/version.info", f+"/mods/creatmcmodinfo.py",
               f+"/mods/mcpython_moduls",
               f+"/mods/mcpython", f+"/saves/dir.txt",
-                                               f+"/mods/mcpython/mcpython.py", f+"/mods/mcpython_moduls/modulinit.py"],
+                                               f+"/mods/mcpython/mcpython.py", f+"/mods/mcpython_moduls/modulinit.py",
+              f+"/updates.txt"],
          not_res=[f+"/assets/unused", f+"/assets/textures/todo"],
          not_res_end=[".pyc", ".xml"],
          version=version,
