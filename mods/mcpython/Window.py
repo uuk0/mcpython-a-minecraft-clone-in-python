@@ -4,7 +4,7 @@ from Model import *
 
 from pyglet.window import key
 
-#import Block
+# import Block
 
 import Blocks
 
@@ -27,6 +27,7 @@ import globals as G
 import states
 
 from constans import FACES
+
 
 class Window(pyglet.window.Window):
 
@@ -68,11 +69,11 @@ class Window(pyglet.window.Window):
         self.dy = 0
 
         # A list of blocks the player can place. Hit num keys to cycle.
-        #self.inventory = [Blocks.Grass, Blocks.Sand, Blocks.Brick, Blocks.Stone, Blocks.Dirt, Blocks.CobbelStone]
+        # self.inventory = [Blocks.Grass, Blocks.Sand, Blocks.Brick, Blocks.Stone, Blocks.Dirt, Blocks.CobbelStone]
         self.hotbarelement = 0
 
         # The current block the user can place. Hit num keys to cycle.
-        #self.block = self.inventory[0]
+        # self.block = self.inventory[0]
 
         # Convenience list of num keys.
         self.num_keys = config.CONFIGS["init"]["KEYBINDS"]['inventoryslots:keys']
@@ -82,24 +83,24 @@ class Window(pyglet.window.Window):
         self.model = Model(self)
 
         self.chatlabel = pyglet.text.Label('', font_name='Arial', font_size=18,
-            x=30, y=50, anchor_x='left', anchor_y='top',
-            color=(0, 0, 0, 255))
+                                           x=30, y=50, anchor_x='left', anchor_y='top',
+                                           color=(0, 0, 0, 255))
 
         self.player = player(self)
         player.playerinst = self.player
 
         self.world = None
 
-        #time to manage destroy-system
+        # time to manage destroy-system
         self.mouseclicktime = 0
         self.isclicked = False
         self.clickingblock = None
         self.clickstarttime = 0
 
-        #mousepos for playerinventory
+        # mousepos for playerinventory
         self.mousepos = (0, 0)
 
-        #helper vars for braking system
+        # helper vars for braking system
         self.braking_start = None
 
         self.turning_strafe = [0, 0]
@@ -116,23 +117,22 @@ class Window(pyglet.window.Window):
         self.menü = None
         self.menünames = config.CONFIGS["init"]["GAME_STATES"]
         self.menüeventbinds = []
-        self.camerastate = 0 #0: normal, 1: viewing player from out
+        self.camerastate = 0  # 0: normal, 1: viewing player from out
 
         if config.CONFIGS["init"]["GAMETYPE"] != "FULL":
             eventhandler.on_event("on_draw_2D", self.on_draw_2d_demo_label)
             print("demo mode")
 
-
         self.worldname = None
         self.seed = 0
 
-        self.gametime = 0 #a value between 0 and 2000 (0=2000)
+        self.gametime = 0  # a value between 0 and 2000 (0=2000)
 
         self.lastsize = (800, 600)
 
         self.demostarttime = time.time()
 
-    def set_menü(self, name):
+    def set_menu(self, name):
         self.keyEvent = name
         states.handler.activate(name)
         return
@@ -216,11 +216,13 @@ class Window(pyglet.window.Window):
             if self.gametime > 2000:
                 self.gametime -= 2000
             if self.gametime <= 1000:
-                glClearColor((2000-self.gametime)/2000*0.5, (2000-self.gametime)/2000*0.69, (2000-self.gametime)/2000, (2000-self.gametime)/2000)
+                glClearColor((2000 - self.gametime) / 2000 * 0.5, (2000 - self.gametime) / 2000 * 0.69,
+                             (2000 - self.gametime) / 2000, (2000 - self.gametime) / 2000)
             else:
-                glClearColor(self.gametime / 2000*0.5, self.gametime / 2000*0.69, self.gametime / 2000, self.gametime / 2000)
+                glClearColor(self.gametime / 2000 * 0.5, self.gametime / 2000 * 0.69, self.gametime / 2000,
+                             self.gametime / 2000)
         if dt > 10:
-            print("[ERROR] update-zyklus do need more time then normal ("+str(dt)+" secounds)")
+            print("[ERROR] update-zyklus do need more time then normal (" + str(dt) + " secounds)")
         self.model.process_queue()
         sector = sectorize(self.position)
         if sector != self.sector:
@@ -247,17 +249,18 @@ class Window(pyglet.window.Window):
             self.kill("killed")
         WorldSaver.savePlayerData(self.worldname, self)
 
-        op = self.position; ora = self.rotation
+        op = self.position;
+        ora = self.rotation
         self.player.update()
         eventhandler.call("on_player_move", self.position, self.rotation, instant=True)
 
         now = time.time()
         d = now - self.demostarttime
-        if d >= 100*60:
+        if d >= 100 * 60:
             print("[INFO] demo time over")
             WorldSaver.saveWorld(self.model, self.worldname)
             WorldSaver.cleanUpModel(self.model)
-            self.set_menü("start_menü")
+            self.set_menu("start_menü")
 
         if self.keyEvent != "game":
             self.demostarttime += dt
@@ -269,7 +272,8 @@ class Window(pyglet.window.Window):
                 if block:
                     b = self.model.world[block]
                     self.model.remove_block(b.pos)
-                    if self.player.inventory.hotbar.slots[self.hotbarelement].item: self.player.inventory.hotbar.slots[self.hotbarelement].item.on_destroy_with(b)
+                    if self.player.inventory.hotbar.slots[self.hotbarelement].item: self.player.inventory.hotbar.slots[
+                        self.hotbarelement].item.on_destroy_with(b)
                 self.braking_start = time.time()
                 return
             d = time.time() - self.braking_start
@@ -284,7 +288,8 @@ class Window(pyglet.window.Window):
                     self.player.addToFreePlace(b.getDrop(i), b.getDropAmount(i))
                 self.model.remove_block(b.pos)
                 self.braking_start = time.time()
-                if self.player.inventory.hotbar.slots[self.hotbarelement].item: self.player.inventory.hotbar.slots[self.hotbarelement].item.on_destroy_with(b)
+                if self.player.inventory.hotbar.slots[self.hotbarelement].item: self.player.inventory.hotbar.slots[
+                    self.hotbarelement].item.on_destroy_with(b)
             elif not b.isBreakAbleWithItem(i) or not b.isBreakAble():
                 self.braking_start = time.time()
 
@@ -301,13 +306,14 @@ class Window(pyglet.window.Window):
         if self.turning_strafe[0] and config.CONFIGS["ALLOW_CAMERA_MOVING_WITH_ARROWS"]:
             self.rotation = (self.rotation[0] + self.turning_strafe[0] / 4, self.rotation[1])
         if self.turning_strafe[1] and config.CONFIGS["ALLOW_CAMERA_MOVING_WITH_ARROWS"]:
-            if (-90 < self.rotation[1] and self.turning_strafe[1] == -1) or (90 > self.rotation[1] and self.turning_strafe[1] == 1):
+            if (-90 < self.rotation[1] and self.turning_strafe[1] == -1) or (
+                    90 > self.rotation[1] and self.turning_strafe[1] == 1):
                 self.rotation = (self.rotation[0], self.rotation[1] + self.turning_strafe[1] / 4)
             else:
                 self.turning_strafe[1] = None
         # walking
         speed = FLYING_SPEED if self.flying else WALKING_SPEED
-        d = dt * speed # distance covered this tick.
+        d = dt * speed  # distance covered this tick.
         dx, dy, dz = self.get_motion_vector()
         # New position in space, before accounting for gravity.
         dx, dy, dz = dx * d, dy * d, dz * d
@@ -353,7 +359,7 @@ class Window(pyglet.window.Window):
         # a collision. If .49, you sink into the ground, as if walking through
         # tall grass. If >= .5, you'll fall through the ground.
         pad = 0.1
-        #pad = 0
+        # pad = 0
         p = list(position)
         np = normalize(position)
         for face in FACES:  # check all surrounding blocks
@@ -365,7 +371,8 @@ class Window(pyglet.window.Window):
                 if d < pad:
                     (x, y, z) = self.position
                     (dx, dy, dz) = face
-                    if (x + dx, y + dy, z + dz) in self.model.world: self.player.harts -= self.model.world[(x + dx, y + dy, z + dz)].getPlayerDamage()
+                    if (x + dx, y + dy, z + dz) in self.model.world: self.player.harts -= self.model.world[
+                        (x + dx, y + dy, z + dz)].getPlayerDamage()
                     continue
                 for dy in xrange(height):  # check each height
                     op = list(np)
@@ -517,7 +524,6 @@ class Window(pyglet.window.Window):
         """ Draw the crosshairs in the center of the screen.
 
         """
-
 
     def kill(self, msg):
         y = 4

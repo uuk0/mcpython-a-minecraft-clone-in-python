@@ -16,7 +16,7 @@ def initgame(window, creat=True):
     glFogf(GL_FOG_START, 20.0)
     glFogf(GL_FOG_END, 60.0)
     if creat:
-        window.set_menü("start_menü")
+        window.set_menu("start_menü")
         y = 0
         while (0, y, 0) in window.model.world:
             y += 1

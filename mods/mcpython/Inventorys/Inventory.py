@@ -33,7 +33,7 @@ class InventoryHandler:
 
     def show(self, id):
         if G.window:
-            G.window.set_menü("minecraft:inventorys")
+            G.window.set_menu("minecraft:inventorys")
         else:
             G.statehandler.activate("minecraft:inventorys")
         self.state.show(self.inventoryinst[id])
@@ -98,7 +98,7 @@ class InventoryState(G.State):
         if not inst in self.instevents: self.instevents[inst] = []
         self.instevents[inst].append(self.events[-1])
         if G.window and not G.window.keyEvent == "minecraft:inventorys":
-            G.window.set_menü("minecraft:inventorys")
+            G.window.set_menu("minecraft:inventorys")
 
     def hide(self, inst):
         if not inst in self.instevents: return
@@ -107,11 +107,11 @@ class InventoryState(G.State):
             eventhandler.unregister_on_event(e)
         del self.instevents[inst]
         if len(self.instevents) == 0:
-            G.window.set_menü("minecraft:game")
+            G.window.set_menu("minecraft:game")
 
     def key_press(self, eventname, symbol, modifiers):
         if symbol == key.ESCAPE:
-            G.window.set_menü("minecraft:game")
+            G.window.set_menu("minecraft:game")
 
 G.statehandler.register(InventoryState)
 

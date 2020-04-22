@@ -545,3 +545,5 @@ Post-fixes:
   - fixed compatibility with higher python versions
   - fixed various outdated libraries & the dependent code
   - removed gitpacker system
+  - fixed left-over not-G.local using file accessor
+  - added requirements.txt file

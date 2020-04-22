@@ -157,7 +157,7 @@ def cleanUpModel(model):
         eventhandler.unregister_on_event(e if type(e) == int else e[0])
     #for e in Inventorys.handler.
     eventhandler.call("on_model_cleaned_end")
-    model.window.set_menü(state)
+    model.window.set_menu(state)
     chat.chat.chattext = ""
     chat.chat.opened = False
 

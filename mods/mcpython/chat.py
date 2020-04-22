@@ -82,7 +82,7 @@ class chat:
             self.chattext = ""
             self.opened = False
             self.commandhistory.append(self.chattext)
-            G.window.set_menü("minecraft:game")
+            G.window.set_menu("minecraft:game")
         elif mod & key.MOD_CTRL and symbol == key.C:
             pyperclip.copy(self.chattext)
             print("copiing...")

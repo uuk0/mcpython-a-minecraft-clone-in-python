@@ -273,7 +273,7 @@ class Game(State):
                     if invhandler.inventoryinst[e].getId() == 4:
                         invhandler.hide(e)
                 invhandler.show(0)
-            G.window.set_menü("minecraft:esc")
+            G.window.set_menu("minecraft:esc")
 
         elif symbol == config.CONFIGS["init"]["KEYBINDS"]['togleflying:key'] and G.player.gamemode == 1:
             G.window.flying = not G.window.flying
@@ -283,11 +283,11 @@ class Game(State):
             if G.window.braking_start: G.window.braking_start = time.time()
         elif symbol == config.CONFIGS["init"]["KEYBINDS"]['openchat:key']:
             chat.open()
-            G.window.set_menü("minecraft:chat")
+            G.window.set_menu("minecraft:chat")
         elif symbol == config.CONFIGS["init"]["KEYBINDS"]['openinventory:key']:
             for i in range(0, 4):
                 G.inventoryhandler.show(i)
-            G.window.set_menü("minecraft:inventory")
+            G.window.set_menu("minecraft:inventory")
         elif symbol == key.LSHIFT and (G.player.mode == 2 or G.player.mode == 3):
             G.player.inventory.on_shift()
         elif symbol == config.CONFIGS["init"]["KEYBINDS"]['movecamera:key'][0] and config.CONFIGS["ALLOW_CAMERA_MOVING_WITH_ARROWS"]:
@@ -413,7 +413,7 @@ class ChatState(State):
         if symbol == key.ESCAPE:
             chat.opened = False
             chat.text = ""
-            G.window.set_menü("minecraft:game")
+            G.window.set_menu("minecraft:game")
         else:
             chat.addKey(symbol, modifiers)
         
@@ -460,14 +460,14 @@ class DemoInfo(State):
             
     def on_demo_info_purchase_now_clicked(self):
         print("not implemented feature")
-        G.window.set_menü("minecraft:game")
+        G.window.set_menu("minecraft:game")
         
     def on_demo_info_continue_plaing_clicked(self, eventname):
-        G.window.set_menü("minecraft:game")
+        G.window.set_menu("minecraft:game")
         
     def key_press(self, eventname, symbol, mods):
         if symbol == key.ESCAPE:
-            G.window.set_menü("minecraft:game")
+            G.window.set_menu("minecraft:game")
     
 handler.register(DemoInfo)    
 
@@ -508,17 +508,17 @@ class ESC_State(State):
         
     def key_press(self, eventname, symbol, mods):
         if symbol == key.ESCAPE:
-            G.window.set_menü("minecraft:game")
+            G.window.set_menu("minecraft:game")
             
     def mouse_press(self, eventname, x, y, button, modifiers):
         if x > 200 and x < 595 and y > 401 and y < 437:
-            G.window.set_menü("minecraft:game")
+            G.window.set_menu("minecraft:game")
         elif x > 200 and x < 596 and y > 202 and y < 236:
             print("[INFO] saving world...")
             WorldSaver.saveWorld(G.model, G.window.worldname)
             print("[INFO] saved!")
             WorldSaver.cleanUpModel(G.model)
-            G.window.set_menü("minecraft:start_menü")
+            G.window.set_menu("minecraft:start_menü")
         elif (modifiers & key.MOD_SHIFT):
             print(x, y)
 
@@ -563,7 +563,7 @@ class StartMenü(State):
                 and x < self.game_start_worldselect.x + self.game_start_worldselect.image.width \
                 and y > self.game_start_worldselect.y \
                 and y < self.game_start_worldselect.y + self.game_start_worldselect.image.height:
-            G.window.set_menü("minecraft:world_select")
+            G.window.set_menu("minecraft:world_select")
         elif x > self.game_start_quit_sprite.x \
                 and x < self.game_start_quit_sprite.x + self.game_start_quit_sprite.image.width \
                 and y > self.game_start_quit_sprite.y \
@@ -596,7 +596,7 @@ class Inventory(State):
         
     def key_press(self, eventname, symbol, mods):
         if symbol == key.ESCAPE or symbol == key.E:
-            G.window.set_menü("minecraft:game")
+            G.window.set_menu("minecraft:game")
 
     def deactivate(self):
         for i in range(4): G.inventoryhandler.hide(i)
@@ -643,7 +643,7 @@ class WorldSelect(State):
                 and x <  self.world_select_creat_new_sprite.x + self.world_select_creat_new_sprite.image.width \
                 and y > self.world_select_creat_new_sprite.y \
                 and y < self.world_select_creat_new_sprite.y + self.world_select_creat_new_sprite.image.height:
-            G.window.set_menü("minecraft:loading")
+            G.window.set_menu("minecraft:loading")
             #TickHandler.handler.run(self.generate, 2)
             self.generate()
         elif x > self.world_select_canceled_sprite.x \
@@ -656,7 +656,7 @@ class WorldSelect(State):
 
     def generate(self):
         if time.time() - self.lastselect < 10:
-            G.window.set_menü("minecraft:game")
+            G.window.set_menu("minecraft:game")
             raise ValueError()
             return
         WorldSaver.cleanUpModel(G.model)
@@ -686,9 +686,9 @@ class WorldSelect(State):
             chest = lootchest.StartChest()
             chest.past((x, y - 1, z))
         if config.CONFIGS["init"]["GAMETYPE"] != "gametype:full":
-            G.window.set_menü("minecraft:demo_info")
+            G.window.set_menu("minecraft:demo_info")
         else:
-            G.window.set_menü("minecraft:game")
+            G.window.set_menu("minecraft:game")
 
         self.demostarttime = time.time()
         self.lastselect = time.time()

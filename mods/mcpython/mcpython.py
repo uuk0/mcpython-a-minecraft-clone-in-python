@@ -134,7 +134,7 @@ except:
 
 def run():
     try:
-        G.window.set_menü("minecraft:start_menü")
+        G.window.set_menu("minecraft:start_menü")
 
         eventhandler.call("on_game_started")
 

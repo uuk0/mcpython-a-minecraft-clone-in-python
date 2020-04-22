@@ -1,1 +1,3 @@
 PyFastNoiseSIMD==0.4.1
+pyglet==1.5.4
+nbt==1.5.0
