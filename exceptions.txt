@@ -1,0 +1,1385 @@
+
+[1536776730.1803813] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre5_1, gameid=201809121858 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536776730.211633] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre5_1, gameid=201809121858 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536776730.211633] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre5_1, gameid=201809121858 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536776730.352267] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre5_1, gameid=201809121858 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536776730.352267] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre5_1, gameid=201809121858 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536776792.679988] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre5_1, gameid=201809121858 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536776792.679988] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre5_1, gameid=201809121858 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536776792.679988] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre5_1, gameid=201809121858 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536776792.711241] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre5_1, gameid=201809121858 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536776792.711241] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre5_1, gameid=201809121858 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778561.0929055] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778561.1085324] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778561.1085324] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778561.1554103] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778561.1554103] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778586.1727483] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\EventHandler.py", line 67, in call
+    self.functions[f](*[name]+list(args))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 648, in mouse_press
+    self.generate()
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 674, in generate
+    G.window.world.generateChunk(x, z)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\WorldHandler.py", line 23, in generateChunk
+    G.player.dimension.generateChunk((x, z))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\Dimension.py", line 59, in generateChunk
+    minl=30)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython_moduls\perlin.py", line 6, in generatePerlin
+    perlin = simplexnoise.noise.PerlinNoiseOctave(maxu, maxl, simplexnoise.noise.DIMENSIONS_3D)
+TypeError: __init__() takes from 1 to 2 positional arguments but 4 were given
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778632.7228148] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778632.7384403] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778632.7384403] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778632.769692] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778632.769692] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778654.7399442] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\EventHandler.py", line 67, in call
+    self.functions[f](*[name]+list(args))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 648, in mouse_press
+    self.generate()
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 674, in generate
+    G.window.world.generateChunk(x, z)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\WorldHandler.py", line 23, in generateChunk
+    G.player.dimension.generateChunk((x, z))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\Dimension.py", line 59, in generateChunk
+    minl=30)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython_moduls\perlin.py", line 6, in generatePerlin
+    perlin = simplexnoise.noise.SimplexNoise(maxu, maxl, simplexnoise.noise.DIMENSIONS_3D)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython_moduls\simplexnoise\noise.py", line 129, in __init__
+    for i in range(self.num_octaves)]
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython_moduls\simplexnoise\noise.py", line 129, in <listcomp>
+    for i in range(self.num_octaves)]
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython_moduls\simplexnoise\noise.py", line 302, in __init__
+    self.p_supply = [i for i in xrange(0, 256)]
+NameError: name 'xrange' is not defined
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778688.0703516] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778688.0703516] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778688.0859792] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778688.117231] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778688.117231] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778717.7755136] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\EventHandler.py", line 67, in call
+    self.functions[f](*[name]+list(args))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 648, in mouse_press
+    self.generate()
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 674, in generate
+    G.window.world.generateChunk(x, z)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\WorldHandler.py", line 23, in generateChunk
+    G.player.dimension.generateChunk((x, z))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\Dimension.py", line 59, in generateChunk
+    minl=30)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython_moduls\perlin.py", line 8, in generatePerlin
+    for x in range(-16*2.5, 16*2.6+1):
+TypeError: 'float' object cannot be interpreted as an integer
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778755.4968436] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778755.4968436] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778755.5124705] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778755.5437214] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778755.5437214] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778886.612414] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778886.612414] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778886.6280375] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778886.6592925] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536778886.6592925] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536779053.9149852] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536779053.9149852] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536779053.9306107] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536779053.9618623] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536779053.9618623] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536846929.015482] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536846929.171743] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536846929.1873684] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536846929.3436308] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536846929.3592563] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847154.8278036] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847154.8278036] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847154.8278036] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847154.874683] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847154.874683] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847176.2823977] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\EventHandler.py", line 67, in call
+    self.functions[f](*[name]+list(args))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 648, in mouse_press
+    self.generate()
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 674, in generate
+    G.window.world.generateChunk(x, z)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\WorldHandler.py", line 23, in generateChunk
+    G.player.dimension.generateChunk((x, z))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\Dimension.py", line 59, in generateChunk
+    minl=30)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython_moduls\perlin.py", line 45, in generatePerlin
+    cellmap = initialiseMap(16, 16, [(random.randint(0, 16), random.randint(0, 16))])
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython_moduls\perlin.py", line 12, in initialiseMap
+    m[entraces] = True
+TypeError: unhashable type: 'list'
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847202.7842143] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847202.7842143] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847202.7842143] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847202.815466] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847202.8310921] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847225.5045161] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\EventHandler.py", line 67, in call
+    self.functions[f](*[name]+list(args))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 648, in mouse_press
+    self.generate()
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 674, in generate
+    G.window.world.generateChunk(x, z)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\WorldHandler.py", line 23, in generateChunk
+    G.player.dimension.generateChunk((x, z))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\Dimension.py", line 59, in generateChunk
+    minl=30)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython_moduls\perlin.py", line 47, in generatePerlin
+    cellmap = doSimulationStep(cellmap)
+TypeError: doSimulationStep() missing 2 required positional arguments: 'width' and 'height'
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847255.772213] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847255.772213] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847255.78784] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847255.8034651] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847255.819089] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847280.7739236] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\EventHandler.py", line 67, in call
+    self.functions[f](*[name]+list(args))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 648, in mouse_press
+    self.generate()
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 674, in generate
+    G.window.world.generateChunk(x, z)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\WorldHandler.py", line 23, in generateChunk
+    G.player.dimension.generateChunk((x, z))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\Dimension.py", line 59, in generateChunk
+    minl=30)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython_moduls\perlin.py", line 47, in generatePerlin
+    cellmap = doSimulationStep(cellmap, 16, 16)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython_moduls\perlin.py", line 31, in doSimulationStep
+    nbs = countAliveNeighbours(oldmap, x, y)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython_moduls\perlin.py", line 22, in countAliveNeighbours
+    if neighbour_x < 0 or neighbour_y < 0 or neighbour_x >= len(m) or neighbour_y >= len(m[0]):
+KeyError: 0
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847309.182115] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847309.1977582] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847309.1977582] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847309.228993] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847309.228993] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847334.7151086] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\EventHandler.py", line 67, in call
+    self.functions[f](*[name]+list(args))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 648, in mouse_press
+    self.generate()
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 674, in generate
+    G.window.world.generateChunk(x, z)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\WorldHandler.py", line 23, in generateChunk
+    G.player.dimension.generateChunk((x, z))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\Dimension.py", line 59, in generateChunk
+    minl=30)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython_moduls\perlin.py", line 47, in generatePerlin
+    cellmap = doSimulationStep(cellmap, 16, 16)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython_moduls\perlin.py", line 31, in doSimulationStep
+    nbs = countAliveNeighbours(oldmap, x, y)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython_moduls\perlin.py", line 24, in countAliveNeighbours
+    elif m[(neighbour_x, neighbour_y)]:
+KeyError: (7, 6)
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847368.8111906] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847368.8268168] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847368.8268168] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847368.858069] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847368.858069] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847397.7194226] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\EventHandler.py", line 67, in call
+    self.functions[f](*[name]+list(args))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 648, in mouse_press
+    self.generate()
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 674, in generate
+    G.window.world.generateChunk(x, z)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\WorldHandler.py", line 23, in generateChunk
+    G.player.dimension.generateChunk((x, z))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\Dimension.py", line 59, in generateChunk
+    minl=30)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython_moduls\perlin.py", line 49, in generatePerlin
+    for x, y, z in cellmap.keys():
+ValueError: not enough values to unpack (expected 3, got 2)
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847616.9529607] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847616.9529607] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847616.968587] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847616.9842138] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536847616.9998388] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536848644.6375635] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536848644.6375635] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536848644.653189] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536848644.6844418] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536848644.6844418] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536848676.4594905] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\EventHandler.py", line 67, in call
+    self.functions[f](*[name]+list(args))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 648, in mouse_press
+    self.generate()
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 674, in generate
+    G.window.world.generateChunk(x, z)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\WorldHandler.py", line 23, in generateChunk
+    G.player.dimension.generateChunk((x, z))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\Dimension.py", line 64, in generateChunk
+    for i, e in enumerate(positions):
+TypeError: 'NoneType' object is not iterable
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536851409.396425] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536851409.4276767] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536851409.4276767] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536851409.537059] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536851409.5526853] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536851507.526734] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536851507.5423598] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536851507.5423598] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536851507.573612] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536851507.573612] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536851537.6381707] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\EventHandler.py", line 67, in call
+    self.functions[f](*[name]+list(args))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 648, in mouse_press
+    self.generate()
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 674, in generate
+    G.window.world.generateChunk(x, z)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\WorldHandler.py", line 23, in generateChunk
+    G.player.dimension.generateChunk((x, z))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\Dimension.py", line 59, in generateChunk
+    minl=30)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython_moduls\perlin.py", line 9, in generatePerlin
+    raise ValueError()
+ValueError
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536852218.470097] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\mcpython.py", line 20, in <module>
+    from chat import *
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\chat.py", line 2, in <module>
+    import Blocks
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\Blocks\__init__.py", line 9, in <module>
+    locals()[name] = importlib.import_module("Blocks."+name)
+  File "C:\Python\interpretter\Python36\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\Blocks\chest.py", line 1, in <module>
+    import Inventorys
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\Inventorys\__init__.py", line 1, in <module>
+    from . import Inventory
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\Inventorys\Inventory.py", line 9, in <module>
+    import states
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 11, in <module>
+    import WorldHandler
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\WorldHandler.py", line 4, in <module>
+    import Dimension
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\Dimension.py", line 11, in <module>
+    import perlin
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython_moduls\perlin.py", line 10
+    data =
+         ^
+SyntaxError: invalid syntax
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536852218.4857247] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\mcpython.py", line 137, in run
+    window.set_men�("minecraft:start_men�")
+NameError: name 'window' is not defined
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536852289.4036398] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536852289.4192653] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536852289.4192653] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536852289.4505186] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536852289.4505186] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536852310.1081822] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\EventHandler.py", line 67, in call
+    self.functions[f](*[name]+list(args))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 648, in mouse_press
+    self.generate()
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 674, in generate
+    G.window.world.generateChunk(x, z)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\WorldHandler.py", line 23, in generateChunk
+    G.player.dimension.generateChunk((x, z))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\Dimension.py", line 72, in generateChunk
+    cx, _, cz = mathhelper.sectorize(zl[0])
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\mathhelper.py", line 91, in sectorize
+    x, y, z = normalize(position)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\mathhelper.py", line 74, in normalize
+    x, y, z = position
+TypeError: 'numpy.float32' object is not iterable
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536852352.5641708] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536852352.579797] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536852352.579797] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536852352.6110487] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536852352.6110487] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536852428.9120593] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\EventHandler.py", line 67, in call
+    self.functions[f](*[name]+list(args))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 648, in mouse_press
+    self.generate()
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 674, in generate
+    G.window.world.generateChunk(x, z)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\WorldHandler.py", line 23, in generateChunk
+    G.player.dimension.generateChunk((x, z))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\Dimension.py", line 72, in generateChunk
+    cx, _, cz = mathhelper.sectorize(list(zl[0]))
+TypeError: 'numpy.float32' object is not iterable
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536852488.853659] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536852488.853659] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536852488.884912] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536852488.900536] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536852488.9161623] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1536852510.2144947] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\EventHandler.py", line 67, in call
+    self.functions[f](*[name]+list(args))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 648, in mouse_press
+    self.generate()
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\states.py", line 674, in generate
+    G.window.world.generateChunk(x, z)
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\WorldHandler.py", line 23, in generateChunk
+    G.player.dimension.generateChunk((x, z))
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\Dimension.py", line 73, in generateChunk
+    cx, _, cz = mathhelper.sectorize((pos[0], pos[1], pos[2]))
+IndexError: invalid index to scalar variable.
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1537379634.8405201] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1537379634.88403] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1537379634.8885305] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1537379635.0030577] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1537379635.0110593] argv=['C:/Python/mcpython/mcpython_3/__main__.py', 'C:\\Python\\mcpython\\mcpython_3'], platform=win32, mcpythonversion=18w37a_pre6_1, gameid=201809122040 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\mcpython_3\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython', 'mctranslate']
+
+[1587564856.5762174] argv=['C:/Python/mcpython/old_1/__main__.py', 'C:\\Python\\mcpython\\old_1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\old_1\mods\mcpython\mcpython.py", line 20, in <module>
+    from chat import *
+  File "C:\Python\mcpython\old_1\mods\mcpython\chat.py", line 2, in <module>
+    import Blocks
+  File "C:\Python\mcpython\old_1\mods\mcpython\Blocks\__init__.py", line 9, in <module>
+    locals()[name] = importlib.import_module("Blocks."+name)
+  File "C:\Python\core\3.8.1\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "C:\Python\mcpython\old_1\mods\mcpython\Blocks\cactus.py", line 3, in <module>
+    import TickHandler
+  File "C:\Python\mcpython\old_1\mods\mcpython\TickHandler.py", line 26, in <module>
+    handler = TickHandler()
+  File "C:\Python\mcpython\old_1\mods\mcpython\TickHandler.py", line 8, in __init__
+    self.nextupdate = clock() + 1
+NameError: name 'clock' is not defined
+mods: ['moduls', 'mcpython']
+
+[1587564856.5772147] argv=['C:/Python/mcpython/old_1/__main__.py', 'C:\\Python\\mcpython\\old_1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\old_1\mods\mcpython\mcpython.py", line 137, in run
+    window.set_men�("minecraft:start_men�")
+NameError: name 'window' is not defined
+mods: ['moduls', 'mcpython']
+
+[1587564868.5394952] argv=['C:/Python/mcpython/old_1/__main__.py', 'C:\\Python\\mcpython\\old_1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\old_1\mods\mcpython\mcpython.py", line 20, in <module>
+    from chat import *
+  File "C:\Python\mcpython\old_1\mods\mcpython\chat.py", line 2, in <module>
+    import Blocks
+  File "C:\Python\mcpython\old_1\mods\mcpython\Blocks\__init__.py", line 9, in <module>
+    locals()[name] = importlib.import_module("Blocks."+name)
+  File "C:\Python\core\3.8.1\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "C:\Python\mcpython\old_1\mods\mcpython\Blocks\cactus.py", line 3, in <module>
+    import TickHandler
+  File "C:\Python\mcpython\old_1\mods\mcpython\TickHandler.py", line 26, in <module>
+    handler = TickHandler()
+  File "C:\Python\mcpython\old_1\mods\mcpython\TickHandler.py", line 8, in __init__
+    self.nextupdate = clock() + 1
+NameError: name 'clock' is not defined
+mods: ['moduls', 'mcpython']
+
+[1587564868.541491] argv=['C:/Python/mcpython/old_1/__main__.py', 'C:\\Python\\mcpython\\old_1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\old_1\mods\mcpython\mcpython.py", line 137, in run
+    G.window.set_men�("minecraft:start_men�")
+AttributeError: 'NoneType' object has no attribute 'set_men�'
+mods: ['moduls', 'mcpython']
+
+[1587564919.83696] argv=['C:/Python/mcpython/old_1/__main__.py', 'C:\\Python\\mcpython\\old_1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\old_1\mods\mcpython\mcpython.py", line 20, in <module>
+    from chat import *
+  File "C:\Python\mcpython\old_1\mods\mcpython\chat.py", line 2, in <module>
+    import Blocks
+  File "C:\Python\mcpython\old_1\mods\mcpython\Blocks\__init__.py", line 9, in <module>
+    locals()[name] = importlib.import_module("Blocks."+name)
+  File "C:\Python\core\3.8.1\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "C:\Python\mcpython\old_1\mods\mcpython\Blocks\chest.py", line 1, in <module>
+    import Inventorys
+  File "C:\Python\mcpython\old_1\mods\mcpython\Inventorys\__init__.py", line 1, in <module>
+    from . import Inventory
+  File "C:\Python\mcpython\old_1\mods\mcpython\Inventorys\Inventory.py", line 9, in <module>
+    import states
+  File "C:\Python\mcpython\old_1\mods\mcpython\states.py", line 11, in <module>
+    import WorldHandler
+  File "C:\Python\mcpython\old_1\mods\mcpython\WorldHandler.py", line 4, in <module>
+    import Dimension
+  File "C:\Python\mcpython\old_1\mods\mcpython\Dimension.py", line 12, in <module>
+    import pyfastnoisesimd
+  File "C:\Python\mcpython\old_1\mods\mcpython_moduls\pyfastnoisesimd\__init__.py", line 13, in <module>
+    from pyfastnoisesimd import extension as _ext
+ImportError: cannot import name 'extension' from partially initialized module 'pyfastnoisesimd' (most likely due to a circular import) (C:\Python\mcpython\old_1\mods\mcpython_moduls\pyfastnoisesimd\__init__.py)
+mods: ['moduls', 'mcpython']
+
+[1587564919.8389575] argv=['C:/Python/mcpython/old_1/__main__.py', 'C:\\Python\\mcpython\\old_1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\old_1\mods\mcpython\mcpython.py", line 137, in run
+    G.window.set_men�("minecraft:start_men�")
+AttributeError: 'NoneType' object has no attribute 'set_men�'
+mods: ['moduls', 'mcpython']
+
+[1587565043.2063937] argv=['C:/Python/mcpython/old_1/__main__.py', 'C:\\Python\\mcpython\\old_1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\old_1\mods\mcpython\mcpython.py", line 20, in <module>
+    from chat import *
+  File "C:\Python\mcpython\old_1\mods\mcpython\chat.py", line 2, in <module>
+    import Blocks
+  File "C:\Python\mcpython\old_1\mods\mcpython\Blocks\__init__.py", line 9, in <module>
+    locals()[name] = importlib.import_module("Blocks."+name)
+  File "C:\Python\core\3.8.1\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "C:\Python\mcpython\old_1\mods\mcpython\Blocks\chest.py", line 1, in <module>
+    import Inventorys
+  File "C:\Python\mcpython\old_1\mods\mcpython\Inventorys\__init__.py", line 7, in <module>
+    from .block_craftingtable import *
+  File "C:\Python\mcpython\old_1\mods\mcpython\Inventorys\block_craftingtable.py", line 3, in <module>
+    import crafting
+  File "C:\Python\mcpython\old_1\mods\mcpython\crafting.py", line 261, in <module>
+    for f in os.listdir("C:/Python/mcpython/mcpython_3/assets/recipes"):
+FileNotFoundError: [WinError 3] Das System kann den angegebenen Pfad nicht finden: 'C:/Python/mcpython/mcpython_3/assets/recipes'
+mods: ['moduls', 'mcpython']
+
+[1587565043.2073927] argv=['C:/Python/mcpython/old_1/__main__.py', 'C:\\Python\\mcpython\\old_1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\old_1\mods\mcpython\mcpython.py", line 137, in run
+    G.window.set_men�("minecraft:start_men�")
+AttributeError: 'NoneType' object has no attribute 'set_men�'
+mods: ['moduls', 'mcpython']
+
+[1587565073.188077] argv=['C:/Python/mcpython/old_1/__main__.py', 'C:\\Python\\mcpython\\old_1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\old_1\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython']
+
+[1587565073.1910694] argv=['C:/Python/mcpython/old_1/__main__.py', 'C:\\Python\\mcpython\\old_1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\old_1\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython']
+
+[1587565073.1910694] argv=['C:/Python/mcpython/old_1/__main__.py', 'C:\\Python\\mcpython\\old_1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\old_1\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython']
+
+[1587565073.1980505] argv=['C:/Python/mcpython/old_1/__main__.py', 'C:\\Python\\mcpython\\old_1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\old_1\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython']
+
+[1587565073.199048] argv=['C:/Python/mcpython/old_1/__main__.py', 'C:\\Python\\mcpython\\old_1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\old_1\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython']
+
+[1587565073.8096995] argv=['C:/Python/mcpython/old_1/__main__.py', 'C:\\Python\\mcpython\\old_1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\old_1\mods\mcpython\mcpython.py", line 144, in run
+    pyglet.app.run()
+  File "C:\Python\core\3.8.1\lib\site-packages\pyglet\app\__init__.py", line 107, in run
+    event_loop.run()
+  File "C:\Python\core\3.8.1\lib\site-packages\pyglet\app\base.py", line 167, in run
+    timeout = self.idle()
+  File "C:\Python\core\3.8.1\lib\site-packages\pyglet\app\base.py", line 237, in idle
+    redraw_all = self.clock.call_scheduled_functions(dt)
+  File "C:\Python\core\3.8.1\lib\site-packages\pyglet\clock.py", line 292, in call_scheduled_functions
+    item.func(now - item.last_ts, *item.args, **item.kwargs)
+  File "C:\Python\mcpython\old_1\mods\mcpython\Window.py", line 224, in update
+    self.model.process_queue()
+  File "C:\Python\mcpython\old_1\mods\mcpython\Model.py", line 351, in process_queue
+    start = time.time()
+AttributeError: module 'time' has no attribute 'clock'
+mods: ['moduls', 'mcpython']
+
+[1587565175.8598835] argv=['C:/Python/mcpython/old_1/__main__.py', 'C:\\Python\\mcpython\\old_1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\old_1\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython']
+
+[1587565175.862877] argv=['C:/Python/mcpython/old_1/__main__.py', 'C:\\Python\\mcpython\\old_1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\old_1\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython']
+
+[1587565175.8638747] argv=['C:/Python/mcpython/old_1/__main__.py', 'C:\\Python\\mcpython\\old_1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\old_1\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython']
+
+[1587565175.8698573] argv=['C:/Python/mcpython/old_1/__main__.py', 'C:\\Python\\mcpython\\old_1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\old_1\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython']
+
+[1587565175.8708549] argv=['C:/Python/mcpython/old_1/__main__.py', 'C:\\Python\\mcpython\\old_1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "C:\Python\mcpython\old_1\mods\mcpython\crafting.py", line 214, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython']

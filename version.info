@@ -1,0 +1,547 @@
+﻿game version system started on the 12th of April 2018. for the first snapshot, not all changes are listed
+
+version 18w15a (from ? to 12.04.2018 at 19 o'clock):
+  added version.info file
+  added config for version string
+  removed config for game titel
+  change window-titel build to use the config-version-string
+  added externalmoduls - folder
+  added pyperclip - file that contains the pyperclip-libary (clipboard system)
+  added externalmoduls folder to sys.path
+  import pyperclip
+  added str+c and str+v to chat.py
+  fixed bugs: chat does not open, chat system fo str+c and str+v does not work / gives errors
+  changed key deteckting for chat system
+  fixed bugs: shift+V copies data to clipboard
+
+version 18w15b (from 12.04.2018 at 19 o'clock to 14.04.2018 at 3:20 pm)
+  changed draw events for Eventhandler (2d + 3d)
+  changed entity player drawing system (works also not)
+  added file "structures.py"
+  added event on_chunk_generated
+  added area in initscript.txt for worldgeneration
+  added class StructurHandler and Structur
+  added version and compatible for structur+
+  definited structur architektur v 0.1.1
+  written loader for structur-file
+  add list-definition for initscript.txt for structurefiles
+  moved texturs to assets/textures
+  created assets/structures for structur files
+  moved loading images for Inventorys/Items to texturGroups.py
+  cleaned up assets dir
+  fixed bug: emerald ore item is incorrect
+
+version 18w15c (from 14.04.2018 at 3:20 pm to 15.04.2018 at 13 o'clock):
+  fixed bug with fill-command (not efficent now)
+  changed .structur arcitectur
+  add command to take out a part as structur
+  added "player model" (taken out of the real game) to the inventory
+  cutted the menü-system out of the real game
+  added demo-message-image to texturgroups
+  added function "set_menü(name)" to window
+  binded events to the pyglet-events
+  added option in eventhandler.call to call everything instant
+  cleaning up window event functions
+  moved list of valid game states to initscript
+  added event for invalidgamestate
+  changed how exceptions in calling events are handled
+  fixed bug: deleting an on_event binding crashed the game
+  fixed bug: when command executed, window.menü is NOT changed
+  fixed bug: moving an item into a armor slot gives an exception
+  fixed bug: wood_plank_2 item has no valid file
+  added window-state and binding and calling of the demo-info picture
+  added events for pressing the both button
+  added command for changing game state
+
+version 18w16a (from 15.04.2018 at 13 o'clock to 16.04.2018 at 5:25 pm)
+  added event binding for key ESC in demo_info mode
+  added mode for esc and "back to game"-button
+  cleaned up textur files + added more wood
+  added additional trees to worldgen
+  changed crafting recipis for wood log -> planks
+  fixed bug with positions of slots in inventorys
+  added quitgame button to esc-menü
+  added ability to past structures (only script-system config)
+  added backups (command / change by world version change / loading in other version) based on time
+  added own random system (seed based)
+  added this to worldgen
+  added events for playermoving
+  bugfix: player model is now rendering an position is setted automaticly
+  changed how the playermoving-event is called
+
+version 18w16b (from 16.04.2018 at 5:25 pm to 18.04.2018 at 5:30 pm)
+  added timer to demo version
+  fixed bugs with timer
+  changed the way how inventorys are rendered / shown
+  added function for dependencies-getting for Inventorys
+  added image for background
+  added state for startmenü
+  added background to draw-system of startmenü (this will be changed in future)
+  added singel.player button
+  added state for loading
+  changed how the world is generated a bit (time, generate options)
+  fixed bugs with Eventhandler, Worldsaver, moving do NOT work
+  added command to list all active event listener
+  moved esc -> back to game as state startmenü
+  added button for quiting game out of start-menü
+
+version 18w16c (from 18.04.2018 at 5:30 pm to 19.04.2018 at 6 pm)
+  fixed bug: crafting table has no texture
+  fixed bug: crafting table inventory is NOT working, crafting - table inventory can't be closed
+  added security-system: if state == None, state is startmenü
+  fixed bug: furnes textur is not correct
+  fixed bug: states contains not arrival keys
+  fixed bug: game is not loading correct
+  fixed bug: world is NOT unloading while going out of an world
+  moved boxmodel-class to entity/boxmodel.py
+  added entity-class
+  added an handler-class for entitys
+  added command "/summon [entityname] [x] [y] [z]"
+  added list of all entitys to model
+  added functions to add entitys
+
+version 18w16d (from 19.04.2018 at 6 pm to 21.04.2018 at 1:23 pm)
+  fixed bug: if inventory (block) closing, inventory is also rendered
+  added texturs for concret and concret powder
+  fixed bug: texture2.png size is incorrect
+  added concret and concret powder
+  fixed bug: when adding an unknown item to inventory, a error came out
+  fixed bug: concret textur id is incorrect
+  fixed bug: when deleting an block, no blockupdate is called
+  fixed bug: fallingblocks fall instant (now some instant / some slow)
+  fixed bug: demo info panel is not shown
+  fixed bug: last inventory slot of crafting table do NOT work
+  fixed bug: name for grid 1x3 is incorrect
+  fixed bug: furnes can't be crafted
+  fixed bug: iron ore item file is incorrect
+  cleaned up the debug-prints a bit
+  deleted duplicate of the check-system of crafting table
+  added the missing grids to crafting-table
+  fixed bug: some recipis were NOT working because the check-function calls the helper function incorrect
+  changed the way how the player inventory is handled
+
+version 18w16e (from 21.04.2018 at 1:23 pm to 21.04.2018 at 6 pm)
+  changed the random-system to generate better
+  added biomes
+  added lootchests
+  cleaned up Blocks/chest.py
+  added start chest for demo mode
+  fixed bug: chest class do NOT return the inventory
+  rewritten world-generator to work with biomes
+  added flat world biome for sandstone, grass / dirt
+  fixed bug: stone layer in backrock is generated without looking at the material
+  boosted worldgeneration up
+  boosted structur pasting up
+  added worldtype normal with trees from structur
+  fixed bug: normal world is full trees
+  fixed bug: no tree is generated
+  fixed bug: trees are invisable
+  fixed bug: trees are not correct
+  fixed bug: trees generates out of world
+  fixed bug: trees generates direct together
+  added seed-system complet to new worldgen
+  fixed bug: world is always flat
+
+version 18w16f (from 21.04.2018 at 6 pm to 22.04.2018 at 11:30 am)
+  added autogeneration
+  fixed bug: aftergeneration was incorrect
+  cleaned up worldsaver from print-statements
+  added option for autogeneration
+  fixed bug: no ores are generating
+  fixed bug: /generate command do not work
+  added worldtype void
+  added question for gamemode
+  added void-base
+  added window-state for worldselect
+  added logo for saves
+  added button to creat a new world
+  do some stuff with it so you can give an startpos
+  added command to past an structur
+  fixed bug: deleting an not existing block gives an error
+
+version 18w16g (from 22.04.2018 at 11:30 a to 22.04.2018 at 4 pm)
+  added crafting recipis for chest and tools
+  added blue ice
+  fixed bug: bedock item was not working
+  added game time var for window
+  added command to change it
+  added to update-method an counter to do it right
+  deleted old_worldhandler file
+  added time to background
+  added ash, bonemeel, brown dye
+  added config for day/night cyclus
+  added green and grey dye, added inksack and lapis
+
+version 18w16h (from 22.04.2018 at 4 pm to 22.04.2018 at 6 pm)
+  added light_blue_dye, light_green_dye, light_light_blue_dye, magenta_dye, orange_dye, pink_dye, purpel_dye, red_dye, yellow_dye
+  added crafting for wool and concret
+  fixed bug: wool colors feat not the dye colors
+  added water (not transparent, but added)
+  added bucket and waterbucket, crafting recipi for bucket
+  added LiquidBucketHandler for handling buckets and liquids
+  added support for bucket / water bucket to liquidhandler
+  added event for item on_destroy_with
+  added var to item that contains the slot in which it is in
+  fixed bug: you can only brake on block a time in creativ-mode
+  fixed bug: water bucket textur was too big
+  added bones
+  fixed bug: when removing an item out of an slot, it came to an error
+  added leather
+
+version 18w17a (from 22.04.2018 at 6 pm to 24.04.2018 at 2:45 pm)
+  added event for placing an item (may be usefull for buckets)
+  added config option for item wich block they would like to set
+  fixed bug: bucket was deleted after setting water
+  added configs for items for food (not used at the moment)
+  added apple, backed_portato
+  added water-item
+  added bone_block
+  added crafting for bone-block
+  added quartz
+  added lava, lava bucket
+  changed the way how the base-biome high data is generated (it is now not so many high-diffrents)
+  fixed bug: world can only be generated downwoard
+  fixed bug: for tree structur, copyair was true
+  fixed bug: game crashed when deleting an block with no item
+  setted the probability for diffrent high of blocks in base_biome higher
+  setted the brake-speed in gamemode 1 a little bit lower
+  added Cold Taiga biome (from the real game)
+  added structur for fichte (2x)
+  fixed bug: sometimes you spawn into a wall
+  added spawnpoint (its realy random)
+  added snow_block
+  fixed bug: grass has no itemtextur
+
+version 18w19a (from 24.04.2018 at 2:45 pm to 08.05.2018)
+  THESE VERSION IS SPLITED UP IN TWO PARTS. THEY ARE WRITTEN NOT TOGETHER
+  1.
+  added some random tom the dirt / stone layer generator
+  changed the high-diffrent in base biome a bit
+  changed the way how the fog-color is setted
+  fixed bug: game runs also if you press esc
+  fixed bug: playermodel is drawn in gamemode 3
+  deleted change-event for dirt / grass
+  fixed bug: first layer of world is dirt instat of grass
+  2.
+  added endstone, endstonebrick
+  added nbt-saving to structures
+  added purpur_block, purpur_pillar
+  added cold_taiga to selectable biome by worldgen
+  fixed bug: fill command took to long
+  changed the way how the inventory is checked (it is now first searching for a free slot)
+  fixed bug: game crashed when adding an item to inventory
+  fixed bug: furnes is not working
+  added modul NBT to externalmoduls to read .nbt files
+  added questuion for world-name
+  fixed bug: game crash when creating a world that is not named "tmp" or "lastworld" or no world was saved under this name
+  added textures for creativ tabs
+
+  AFTER MOVING TOGETHER:
+  added slab for wood_0
+  added nbt-states for slab
+
+version 18w19b (from 08.05.2018 to 12.05.2018 at 1:16 pm)
+  fixed bug: upper slap is using textur of lower slap
+  changed the way how full slabs are handeld
+  added item for slab
+  added ability to add an canInteractWith-event
+  changed the way how the slab-system works
+  added globals with window, model and player
+  added option for how many sectors have to be generated
+  added chunk-handled up to 25 chunks
+  changed how the chunks are generated (order, high diffrents)
+  changed how the high-data is calculated (added two security-option)
+  rewritten high-data-calculating system from ground (based on the 9 sourroundig high-data-models)
+  rewritten chunk-generator for biomes from ground
+  fixed bug: high-data is always about 1000
+  boosted up worldgen
+  boosted up worldloading
+  speeded up world loading
+
+version 18w20a (from 12.05.2018 at 1:16 pm to 18.05.2018 at 1:40 pm)
+  removed event on_chunk_generated
+  added snow layers
+  fixed bug: can't draw half-slabs and snow-layers
+  fixed bug: canInteractWith()-function were at the wrong place
+  fixed bug: can't destroy unbrakeable blocks in gamemode 1
+  added file were every exception is stored
+  fixed bug: only 2 oretypes were generated
+  rewritten save/load system from ground
+  added hunger to player (only a var at the moment)
+  added for block and items functions for extra store data
+  added event for cleanup of model for mods that need render functions (they are all deleted!!!)
+  added entitysavesystem (only one file)
+  fixed bug: cleaning up model failed
+  added demo timer to save
+  fixed bug: nbt saving / loading of wood_log is incorrect
+  added version / saveversion to save
+  added version-id starting by 201805172120 (format: year+month+day+hour+minute) using by saveloader
+  added chunkdata to world
+  boosted up worldloading
+  changed the way how block-data is saved
+  cleaned up main.py
+  fixed bug: spawning into the world
+  finished save system
+  fixed bug: emerald is dropping diamonds
+
+version 18w20b (from 18.05.2018 at 1:40 pm to 20.05.2018 at 11:04 am)
+  fixed bug: braking diamond_ore without an item gives an error
+  fixed bug: in some cases placing an block gives an error
+  fixed bug: item.on_right_click do not work
+  added texturs for harts
+  added class for rendering harts
+  added drawing for harts
+  re-added falling damage
+  added barrier
+  fixed bug: cactus do NOT work
+  added player damage to cactus
+  added xp to smelting
+  fixed bug: error during saving an entity
+  fixed bug: auto-save do not work correct
+  changed the high of the world
+  fixed bug: can't brake diamond + emerald ore in gamemode 1
+  fixed bug: when staying into a block, game crashed
+  removed hart-drawing for gamemode 1 and 3
+  changed the way how exceptions are stored
+  fixed bug: exception-out-printing system do NOT cleaned up after it
+  fixed bug: version string is incorrect
+
+version 18w22a (from 20.05.2018 at 11:04 am to 01.06.2018 at 1:50 pm)
+  fixed bug: syntax error in EventHandler.py in line 96
+  moved try-execpt statement to begin of main-file
+  fixed bug: exceptions are stored wrong
+  rewritten chat from ground
+  added config for debug
+  added config for player name
+  added function to player to write something to chat
+  added entity player getting player inst
+  changed the position of importing player
+  str+v will now add the text, not replace it
+  fixed bug: setting after executing chat msg to None instat of ""
+  fixed bug: demo timer is not reseted
+  added selectors (@s, @p, @a, @r)
+  added function for killing to playermodel
+  added function for getting inventory to entity returns list
+  fixed bug: spawnpoint is overwritten by kill-system
+  changed the way how exception are formated
+  fixed bug: chat is not cleaned up when closing world
+  fixed bug: clean up function has an error
+  fixed bug: event "on_unknown_command_executed" is not callen
+
+version 18w22b (from 01.06.2018 at 1:50 pm to 03.06.2018 at 9:30 am)
+  fixed bug: looking around keys are wrong
+  fixed bug: /give-command amount & data getter is wrong
+  fixed bug: Inventory.Slot.setItem is not using in try-except-statement the exception-file
+  fixed bug: Inventory.Slot.setItem is failing by /give-command
+  fixed bug: furnes inventory has the inventory-id of craftingtable
+  fixed bug: in void-world spawning over the void sometimes
+  (fixed bug: can't come back to game in gamemode 2 or 3)
+  added Inventory on_show event
+  added inventoryhandler to globals
+  fixed bug: WorldSaver is using the wrong coding for loadWorld.notfound
+  fixed bug: biome:ColdTaiga is using by tree gen wrong random
+  fixed bug: can't brake emerald ore
+  fxied bug: can't generate biome:coldTaiga
+  fixed bug: can build under y=0
+  fixed bug: if building over y=265 or under y=0, item is not given back
+  fixed bug: demo timer is ignored
+  fixed bug: demo timer is running in esc-menü and other inventorys
+  fixed bug: window-states are loaded wrong
+  fixed bug: printing a lot of errors from eventhandler "unregister out"
+  fixed bug: biome:ColdTaiga is using an wrong high-generator
+  fixed bug: gamemode 1 snow layer adding is like gamemode 0 snow layer adding
+  snow is now braking when braking the block under it
+
+version 18w24a (from 03.06.2018 at 9:30 am to 18.06.2018 at 20 o'clock)
+  fixed bug: /spawnpoint-command is using wrong command parser
+  fixed bug: /tp command do not work
+  added security system for chat
+  fixed bug: key.ß is not added for chat
+  fixed bug: key.ß+shift do not generate "?" in chat
+  re-added /generate and /load and /save and /list and /savestructur and /backup and /summon and /paststructur and /time command
+  added structures to /list command
+  added diorit and polished diorit
+  added shapeless crafting recipis
+  removed ALL recipis
+  readded some recipis
+  moved externalmoduls-file to dir
+  cleaned up file-imports
+  changed external moduls to better handling
+  updated everything to work with the compiler
+  added __main__-file for launching by compiler
+  changed the way how exceptions are stored
+  added my own compiler for the game
+
+version 18w30a (from 22.07.2018 at 20 o'clock to 25.07.2018 at 6:40 pm)
+  fixed bug: auto-generate does not work correctly
+  added name tags for lootchests
+  added start chest for select in world-gen-select
+  moved the past-function from __init__ to past
+  removed unnecesary options in config.txt
+  added dimension attribute to player
+  added attribute for basebiome: ores
+  cleaned up initscript.txt
+  added ModLoader file and mods dir
+  added mod loader to startup
+  added MOD-class in ModLoader
+  added pre-load (import) system to modloader
+  added mods to /list command
+  added /time remove <time> command
+  added tool for creating mcmod.info files
+  fixed a lot of bugs with the Modloader
+  THESE VERSION MAY BE   N O T   UPLOADED BECAUSE GITHUB HAS PROBLEMS WITH IT
+
+version 18w30b (from 25.07.2018 at 6:40 pm to 28.07.2018 at 5:30 pm)
+  removed sys.path.remove() notation in ModLoader (for better mod coms)
+  moved the whole game into a mod
+  added run function for mods
+  moved external moduls to an own mod
+  added dependency-handler for modloading for moduls (it is the first)
+  fixed bug: two slabs together were not working
+  added super-class for slabs
+  fixed bug: when adding a mod, the mod could be inited BEFORE mcpython
+  fixed bug: when printing mod-init exceptions, mods without an error are also printed out
+  added Dimension-class
+  added dimensionid-generator to IDGenerator
+  added config for highmapworldsize
+  added seed to globals
+  moved worldgen to dimensions
+  fixed bug: ModLoder is printing a lot of uneccesarius stuff out
+  added step-printer for worldpreparing
+  REMOVED autogeneration (for the moment)
+  removed world-type-select
+  added biome-lable
+  setted default biom size of Overworld to 4
+  THESE VERSION MAY BE   N O T   UPLOADED BECAUSE GITHUB HAS PROBLEMS WITH IT
+
+version 18w30c(from 28.07.2018 at 5:30 pm to 29.07.2018 at 10 pm)
+  added biomes ColdTaiga_M, ColdTaigaHills
+  fixed bug: Overworld can change biome between base an cold taiga only one way
+  removed BaseBiome
+  added GenerationStructur
+  moved SpruceTree to use GenerationStructur
+  removed all tree-structures
+  changed the biome-generate-highdata constants
+  added attribute of biom: minheight, maxheight
+  fixed bug: when two biomes with diffrent high min / max are genearted, it cold cause problems
+  fixed bug: when changing from gamemode 1 to 0, flying is not reseted
+  changed the way how ore types for generation are selected
+  fixed bug: no emeralds are generated
+  added error message when adding an unknown block
+  fixed bug: trees are not generated
+  fixed bug: demo timer is running 100 sec instead of 100 min
+  added an biome for bigger spruce trees
+
+version 18w31a(from 29.07.2018 at 10 pm to 02.08.2018 at 12 o'clock)
+  added biome cold_tundra
+  fixed bug: snow layers can not be braken by shovels faster than with other items
+  added event for chunk generation
+  added libary for java-random
+  when calling model.add_block, block is removed
+  fixed bug with java random setSeed system
+  added states file
+  added an @EventHandler.eventhandler.event - notation
+  added random to seed
+  added TileState for states like the world drawing, the background drawing
+  added states for all states at the moment
+  added event for resizing the window
+  you can now resize the window!!!
+  removed event on_unknow_game_state
+  fixed a lot of bugs with the new system
+
+version 18w31b (from 02.08.2018 at 12 o'clock to 04.08.2018 at 11:40 am)
+  changed the way how during preparing world the step are printed out
+  fixed a lot of bugs with the new state system
+  added statehandler, State-class and TileState-class to globals
+  deleted a lot of unused imports
+  added an state-class for inventorys
+  added option for Mouse sensitiv
+  added /seed command
+  fixed bug: sprites are moving, but hitsystem NOT
+  fixed bug: recticel is only drawn after resizing
+  added Command-dir + Command parser system
+  added help to Command-class
+  moved getSelector from chat to Commands
+  added playernameselection to getSelector
+  moved every command to Commands
+  added /help-command
+  added /help all to give help to all commands at one time out
+  added mouse-workaround
+  added /give <entity> <item> stack to give a whole stack
+  added entity.kill() function
+  added Command.getPosition(x, y, z, pos, entity)-function for getting position (accepts selectors for the positions)
+  removed /save, /list, /backup commands
+
+version 18w32a (from 04.08.2018 at 11:40 am to 06.08.2018 at 12 o'clock)
+  added ice an packed ice
+  added icicle-structur, oaktree-structur
+  added oak wood logs
+  added shortcut-file
+  added screenshots
+  added chunk-reload via F3+A
+  added gamemode change key F3+N
+  added ColdTaigaIceicle
+  added mcworldconverter-file
+  added command /loadmc-command
+  added getId for Dimensions, Dimensionhandler, Dimensionselector
+  added updates.txt file
+  fixed bug: adding block None gives and is removing it
+  changed the default player name to support selector-getting
+
+version 18w36a (from 06.08.2018 at 12 o'clock to 07.09.22018 at 4:23 pm)
+  added an minecraft-recipi-loader
+  fixed bug: G.local is not setted correct
+  added some minecraft oredict names
+  cleaned up __main__.py file
+  added exceptionhandler.py for handling exceptions
+  added own perlin generator
+  fixed bug: can't parse /gamemode-command without selector
+  added |x|-function to mathhelper
+  added option for generating perlin's
+  added configurateable var for some items (not finished!)
+  speeded up fallingblocks-updates
+  removed secound destroygroup definition in furnes class
+  fixed bug: purpur pillar is not handeled as PickMineAble Block
+  added an file-importer for blocks, items, commands
+  removed Block.py in mods/mcpython (outdated file)
+  added ability to register things via @Blocks.Block.handler
+  added option for blastrecistance and if the block can be setted on fire
+  added an option to block if it's blocking explosions
+  added an option if a block is moveable
+  looked at EVERY block and added some resources
+  added that an id for an block is NEEDED
+  added an getDropBlock-function to fallingblock which definits which block to drop when falling on an none-full block
+  obsidian drops now nothing when broken instat of don't braking
+  renamed minecraft:grass to minecraft:grass_block
+  moved blue_ice.py to ice.py
+  snow blocks will drop now snow insteat of itself
+  added an event for blocks when destoryed
+  fixed bug: sometimes game crashed when saving an world into an non-exist folder
+
+version 18w38a (from 07.09.22018 at 4:23 pm to .09.2018 at #
+  added option for printing the stuff for crafting out
+  fixed some bugs with fileloading sytem
+  removed neccesarity for ids
+  fixed some bugs with loading file in dirs Blocks/..., Item/..., Commands/...
+  fixed bug with generation-setup selection
+  fixed bug: can't enter game
+  rewritten eventhandler from ground
+  added experimental /execute-command
+  added mod mctranslate for files translated from real source code (not used at the moment)
+  moved globals out of the mods-folder
+  added mods to globals
+  added mods to exception entries
+  added gameinfo.dat
+  moved config out of the mods-folder
+  fixed bug: moduls-mod is loaded twice
+  gameinfo.dat contains the folloing informations: version_id, version_name, game_name, ismodable -> it will now be at every update up to date
+  some of the data will be extracted to config
+  exception.txt is now for every upload empty
+  added pyfastnoisesimd-lib
+  removed file perlin.py
+  re-added perlin (experimental)
+
+Post-fixes:
+  - fixed compatibility with higher python versions
+  - fixed various outdated libraries & the dependent code
+  - removed gitpacker system

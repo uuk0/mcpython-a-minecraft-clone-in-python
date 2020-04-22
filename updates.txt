@@ -1,0 +1,51 @@
+
+18w15a: added config-system, chat improvments
+18w15b: render improvments, generation improvements, asset dir changed
+18w15c: chat improvments, added window-states
+18w16a: more wood, added seed-base random
+18w16b: added demo-timer, window-states improvments
+18w16c: crafting-table improvments, added entitys, added command /summon
+18w16d: inventory improvments
+18w16e: added biomes & loot chests, worldgeneration improvments
+18w16f: added autogeneration, some pre-generate improvments
+18w16g: recipi improvments, added ingame time, added dyes
+18w16h: added more dyes, more recipis,
+18w17a: added liquids, world-gen improvments
+18w19a: more blocks for end,
+18w19b: high-calculator improvements, speeded up world gen
+18w20a: added snow, storage improvements
+18w20b: added harts, xp
+18w22a: made the game playable, added more configs
+18w22b: bug fixes
+18w24a: chat + command improvements
+18w30a: added Dimension-attribute for player, ModLoader (NOT UPLOADED)
+18w30b: game is now a mod, added Dimensions (NOT UPLOADED)
+18w30c: biome improvements, structur improvements
+18w31a: biome improvements, added java-random, changed the whole window-state-system
+18w31b: command-system improvements
+18w32a: biome improvements, added some shortcuts, added convertert to load minecraft world folders
+18w36a: crafting-system improvements, world gen improvments
+
+18w36b: crafting-system improvements, eventhandler improvements, command improvments
+
+planed:
+
+(ability to load diffrent minecraft version files)
+more biomes
+more commands
+more shortcuts
+more entitys
+more blocks
+more game states
+(more crafting-recipis) -> add all items + fix last exceptions
+use minecraft data folder
+add OreDict, CraftingLoader and destoryGroup patchables finish
+add textur slitching (see http://pyglet.readthedocs.io/en/pyglet-1.3-maintenance/modules/image/atlas.html#pyglet.image.atlas.TextureAtlas)
+clean up EVERY File and add docstrings
+change world format to 1.13.1
+add sounds
+change the way how things are registert (<handlerclass>.register(klass) -> @<handlerclass>\n<classdefinition>)
+move redstone_lamp_on as NBT state of redstone lamp
+add every gui from the orginal file (see https://pythonhosted.org/pyglet/programming_guide/image_sequences_and_atlases.html)
+add MultiBlock-handler
+finish /execute-command

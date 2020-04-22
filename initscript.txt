@@ -1,0 +1,42 @@
+﻿
+#INITSCRIPT FOR MCPYTHON (the part that you can edit without viewing the sourcecode)
+#IF YOU WANT TO WRITE AN MOD OR AN PLUGIN, DO IT HEAR. THIS IS ON EVERY STARTUP AND RELOAD EXECUTED. SO BE SHOUR THAT YOU REGISTER EVERYTHING ONLY ONES
+#inited / loaded since here: Eventhandler, modulsystem, constant system (unused), chat system, TickHandler, texturGroups, Items, WorldHandler, destroy groups, crafting, entity (not used), Blocks, oredict, pyperclip
+#loaded HERE: moduls, keys-class (definited during loading) -> can be overwritten
+
+#---------------------------------------------------------------------------------------#
+#KEYBINDS-------------------------------------------------------------------------------#
+#---------------------------------------------------------------------------------------#
+KEYBINDS = {}
+
+KEYBINDS[keys.FORWARD] = key.W
+KEYBINDS[keys.BACKWARD] = key.S
+KEYBINDS[keys.RIGHT] = key.D
+KEYBINDS[keys.LEFT] = key.A
+KEYBINDS[keys.JUMP] = key.SPACE
+KEYBINDS[keys.escape] = key.ESCAPE
+KEYBINDS[keys.toggleflying] = key.TAB
+KEYBINDS[keys.inventoryslots] = [key._1, key._2, key._3, key._4, key._5, key._6, key._7, key._8, key._9, key._0]
+KEYBINDS[keys.openchat] = key.T
+KEYBINDS[keys.openinventory] = key.E
+#must be allowed in config.txt
+KEYBINDS[keys.MOVECAMERA] = [key.UP, key.DOWN, key.LEFT, key.RIGHT]
+
+#---------------------------------------------------------------------------------------#
+
+STRUCTURES = [] #a list of all structure-files that must be loaded
+
+
+#a list of chunkoffsets that are used for generating size in option.txt file
+CHUNK_GENERATE = [[0, 0], [0, -1], [0, 1], [-1, -1], [-1, 0], [-1, 1], [1, -1], [1, 0], [1, 1],
+                  [2, -2], [2, -1], [2, 0], [2, 1], [2, 2], [-2, -2], [-2, -1], [-2, 0], [-2, 1], [-2, 2], [-1, -2], [-1, 2], [0, -2], [0, 2], [1, -2], [1, 2],
+                  [3, -3], [3, -2], [3, -1], [3, 0], [3, 1], [3, 2], [3, 3], [-3, -3], [-3, -2], [-3, -1], [-3, 0], [-3, 1], [-3, 2], [-3, 3], [-2, -3], [-1, -3], [0, -3], [1, -3], [2, -3], [-2, 3], [-1, 3], [0, 3], [1, 3], [2, 3]]
+
+#---------------------------------------------------------------------------------------#
+
+#---------------------------------------------------------------------------------------#
+#GAMECONFIG-OPTIONS-------------------------------------------------------------------------#
+#---------------------------------------------------------------------------------------#
+
+FULL, DEMO = "gametype:full", "gametype:demo"
+GAMETYPE = DEMO
