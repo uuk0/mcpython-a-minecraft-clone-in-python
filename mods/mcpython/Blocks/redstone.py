@@ -1,9 +1,10 @@
 from .Block import *
 import random
 
+
 class Redstone(Block):
     def on_creat(self):
-        self.sides = {"N":None, "O":None, "S":None, "W":None}
+        self.sides = {"N": None, "O": None, "S": None, "W": None}
         self.state = 0
 
     def getName(self):

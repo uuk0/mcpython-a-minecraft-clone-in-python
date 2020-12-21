@@ -1,8 +1,8 @@
-
 import config
 import math
 import globals as G
 import random
+
 
 class CommandHandler:
     def __init__(self):
@@ -17,7 +17,8 @@ class CommandHandler:
             if c.isCommand(line):
                 possible.append(c)
         print(possible)
-        if len(possible) == 0: return False
+        if len(possible) == 0:
+            return False
         exceptions = []
         for e in possible:
             ex = e.getSyntaxError(line, entity, position, chat)
@@ -37,10 +38,12 @@ class CommandHandler:
             possible[0].parse(line, entity, position, chat)
             return True
 
+
 handler = CommandHandler()
 
 """Not added:
 /debug, """
+
 
 class Command:
     @staticmethod
@@ -55,15 +58,17 @@ class Command:
     def parse(line, entity, position, chat):
         pass
 
-
     @staticmethod
     def getHelp():
         return ""
 
+
 PlayerRegister = {}
 
+
 def register():
-    PlayerRegister = {config.CONFIGS["PLAYER_NAME"]:G.player.model}
+    PlayerRegister = {config.CONFIGS["PLAYER_NAME"]: G.player.model}
+
 
 def getSelector(text, pos, entity):
     if text in PlayerRegister:
@@ -94,6 +99,7 @@ def getSelector(text, pos, entity):
         return random.choice(PlayerRegister.values())
     else:
         return []
+
 
 def getPosition(x, y, z, pos, entity):
     if x == "~":

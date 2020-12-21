@@ -18,14 +18,19 @@ from collections import deque
 print("[IMPORT/INFO] importing pyglet")
 print("[IMPORT/INFO] importing pyglet.image")
 from pyglet import image
+
 print("[IMPORT/INFO] importing pyglet.gl")
 from pyglet.gl import *
+
 print("[IMPORT/INFO] importing pyglet.graphics")
 from pyglet.graphics import TextureGroup
+
 print("[IMPORT/INFO] importing pyglet.window")
 from pyglet.window import key, mouse
 import pyglet
+
 print("[IMPORT/INFO] importing multiprocessing")
 import multiprocessing
+
 print("[IMPORT/INFO] importing os")
 import os

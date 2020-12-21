@@ -1,5 +1,6 @@
 from . import Command
 
+
 class kill(Command.Command):
     @staticmethod
     def getHelp():
@@ -13,10 +14,17 @@ class kill(Command.Command):
     def getSyntaxError(line, entity, position, chat):
         s = line.split(" ")
         if len(s) == 2:
-            return ["at " + s[1] + " : invalid argument: excpected entity OR entityselector"]
+            return [
+                "at " + s[1] + " : invalid argument: excpected entity OR entityselector"
+            ]
         elif len(s) > 2:
-            return ["at " + line + " : invalid syntax: excpceted 1 or 2 Arguments, gotted " + str(len(s)),
-                    "   " + " " * len(s[0]) + " " * len(s[1]) +" ^"]
+            return [
+                "at "
+                + line
+                + " : invalid syntax: excpceted 1 or 2 Arguments, gotted "
+                + str(len(s)),
+                "   " + " " * len(s[0]) + " " * len(s[1]) + " ^",
+            ]
 
     @staticmethod
     def parse(line, entity, position, chat):
@@ -27,5 +35,6 @@ class kill(Command.Command):
             entity = [entity]
         for e in entity:
             e.kill()
+
 
 Command.handler.register(kill)

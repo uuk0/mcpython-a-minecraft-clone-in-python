@@ -1,6 +1,7 @@
 from .Block import *
 import random
 
+
 class leave_0(Block):
     def getTex(self):
         return tex_coords((5, 2), (5, 2), (5, 2))
@@ -23,5 +24,6 @@ class leave_0(Block):
 
     def getId(self):
         return 18
+
 
 handler.register(leave_0)

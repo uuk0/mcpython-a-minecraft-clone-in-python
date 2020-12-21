@@ -15,6 +15,7 @@ class Dye0(Item):
     def getOreDictNames(self):
         return [OreDict.DYE, OreDict.WHITE_DYE]
 
+
 handler.register(Dye0)
 
 
@@ -31,7 +32,9 @@ class Dye1(Item):
     def getOreDictNames(self):
         return [OreDict.DYE, OreDict.WHITE_DYE]
 
+
 handler.register(Dye1)
+
 
 class Dye2(Item):
     def getName(self):
@@ -46,7 +49,9 @@ class Dye2(Item):
     def getOreDictNames(self):
         return [OreDict.DYE, OreDict.BROWN_DYE]
 
+
 handler.register(Dye2)
+
 
 class Dye3(Item):
     def getName(self):
@@ -61,7 +66,9 @@ class Dye3(Item):
     def getOreDictNames(self):
         return [OreDict.DYE, OreDict.GREEN_DYE]
 
+
 handler.register(Dye3)
+
 
 class Dye4(Item):
     def getName(self):
@@ -76,7 +83,9 @@ class Dye4(Item):
     def getOreDictNames(self):
         return [OreDict.DYE, OreDict.GREY_DYE]
 
+
 handler.register(Dye4)
+
 
 class Dye5(Item):
     def getName(self):
@@ -91,7 +100,9 @@ class Dye5(Item):
     def getOreDictNames(self):
         return [OreDict.DYE, OreDict.BLACK_DYE]
 
+
 handler.register(Dye5)
+
 
 class Dye6(Item):
     def getName(self):
@@ -106,7 +117,9 @@ class Dye6(Item):
     def getOreDictNames(self):
         return [OreDict.DYE, OreDict.BLUE_DYE]
 
+
 handler.register(Dye6)
+
 
 class Dye7(Item):
     def getName(self):
@@ -121,7 +134,9 @@ class Dye7(Item):
     def getOreDictNames(self):
         return [OreDict.DYE, OreDict.LIGHT_BLUE_DYE]
 
+
 handler.register(Dye7)
+
 
 class Dye8(Item):
     def getName(self):
@@ -136,7 +151,9 @@ class Dye8(Item):
     def getOreDictNames(self):
         return [OreDict.DYE, OreDict.LIGHT_GREEN_DYE]
 
+
 handler.register(Dye8)
+
 
 class Dye9(Item):
     def getName(self):
@@ -151,7 +168,9 @@ class Dye9(Item):
     def getOreDictNames(self):
         return [OreDict.DYE, OreDict.LIGHT_LIGHT_BLUE_DYE]
 
+
 handler.register(Dye9)
+
 
 class Dye10(Item):
     def getName(self):
@@ -166,7 +185,9 @@ class Dye10(Item):
     def getOreDictNames(self):
         return [OreDict.DYE, OreDict.MAGENTA_DYE]
 
+
 handler.register(Dye10)
+
 
 class Dye11(Item):
     def getName(self):
@@ -181,7 +202,9 @@ class Dye11(Item):
     def getOreDictNames(self):
         return [OreDict.DYE, OreDict.ORANGE_DYE]
 
+
 handler.register(Dye11)
+
 
 class Dye12(Item):
     def getName(self):
@@ -196,7 +219,9 @@ class Dye12(Item):
     def getOreDictNames(self):
         return [OreDict.DYE, OreDict.PINK_DYE]
 
+
 handler.register(Dye12)
+
 
 class Dye13(Item):
     def getName(self):
@@ -211,7 +236,9 @@ class Dye13(Item):
     def getOreDictNames(self):
         return [OreDict.DYE, OreDict.PURPEL_DYE]
 
+
 handler.register(Dye13)
+
 
 class Dye14(Item):
     def getName(self):
@@ -226,7 +253,9 @@ class Dye14(Item):
     def getOreDictNames(self):
         return [OreDict.DYE, OreDict.RED_DYE]
 
+
 handler.register(Dye14)
+
 
 class Dye15(Item):
     def getName(self):
@@ -241,6 +270,24 @@ class Dye15(Item):
     def getOreDictNames(self):
         return [OreDict.DYE, OreDict.YELLOW_DYE]
 
+
 handler.register(Dye15)
 
-DYES = [Dye0, Dye1, Dye2, Dye3, Dye4, Dye5, Dye6, Dye7, Dye8, Dye9, Dye10, Dye11, Dye12, Dye13, Dye14, Dye15]
+DYES = [
+    Dye0,
+    Dye1,
+    Dye2,
+    Dye3,
+    Dye4,
+    Dye5,
+    Dye6,
+    Dye7,
+    Dye8,
+    Dye9,
+    Dye10,
+    Dye11,
+    Dye12,
+    Dye13,
+    Dye14,
+    Dye15,
+]

@@ -1,6 +1,7 @@
 from .Block import *
 import Item
 
+
 class Water(Block):
     def getTex(self):
         return tex_coords((0, 2), (0, 2), (0, 2))
@@ -8,9 +9,9 @@ class Water(Block):
     def getName(self):
         return "minecraft:water"
 
-    def hasHitbox(self, item): #basic holdable liquid system
+    def hasHitbox(self, item):  # basic holdable liquid system
         if not self.getName() in Item.liquidhandler.liquids:
-            return False #have we buckets that can carry me?
+            return False  # have we buckets that can carry me?
         if item and self.getName() in item.getHoldAbleLiquids():
             return True
         return False
@@ -25,5 +26,6 @@ class Water(Block):
 
     def getId(self):
         return 8
+
 
 handler.register(Water)

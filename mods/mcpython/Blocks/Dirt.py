@@ -2,6 +2,7 @@ from .Block import *
 from oredictnames import OreDict
 from destroyGroup import *
 
+
 @handler
 class Dirt(Block):
     def getTex(self):

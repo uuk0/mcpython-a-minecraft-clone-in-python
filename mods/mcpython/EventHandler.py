@@ -5,6 +5,7 @@ import config
 import globals as G
 import exceptionhandler
 
+
 class EventHandler:
     def __init__(self):
         self.events = {}
@@ -35,7 +36,9 @@ class EventHandler:
 
     def on_event(self, name, funk):
         if not name in self.events:
-            print("[EVENTHANDLER/ERROR] try to add an callback for an unknown event", name)
+            print(
+                "[EVENTHANDLER/ERROR] try to add an callback for an unknown event", name
+            )
             return
         id = self.nextid
         self.nextid += 1
@@ -60,17 +63,18 @@ class EventHandler:
             return
         if not instant:
             for f in self.events[name]:
-                self.callfunctions.append([f, name, [name]+list(args)])
+                self.callfunctions.append([f, name, [name] + list(args)])
         else:
             for f in self.events[name]:
                 try:
-                    self.functions[f](*[name]+list(args))
+                    self.functions[f](*[name] + list(args))
                 except:
                     exceptionhandler.addTraceback()
 
     def event(self, *args):
         self.on_event(args[0].__name__, args[0])
         return args[0]
+
 
 eventhandler = EventHandler()
 eventhandler.register("on_game_inited")
@@ -93,7 +97,9 @@ eventhandler.register("on_model_cleaned_end")
 eventhandler.register("on_chunk_generate")
 eventhandler.register("on_resize")
 
+
 def command_fail(*args):
     print("[CHAT][ERROR] unknown command", args)
+
 
 eventhandler.on_event("on_unknown_command_executed", command_fail)

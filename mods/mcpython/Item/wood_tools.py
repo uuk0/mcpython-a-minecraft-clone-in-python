@@ -2,6 +2,7 @@ from .Item import *
 from destroyGroup import *
 from oredictnames import OreDict
 
+
 class WoodShovel(Item):
     def getName(self):
         return "minecraft:wood_shovel"
@@ -32,7 +33,9 @@ class WoodShovel(Item):
     def getFuelAmount(self):
         return 10
 
+
 handler.register(WoodShovel)
+
 
 class WoodPickAxe(Item):
     def getTexturFile(self):
@@ -64,7 +67,9 @@ class WoodPickAxe(Item):
     def getFuelAmount(self):
         return 10
 
+
 handler.register(WoodPickAxe)
+
 
 class WoodAxe(Item):
     def getTexturFile(self):
@@ -96,7 +101,9 @@ class WoodAxe(Item):
     def getFuelAmount(self):
         return 10
 
+
 handler.register(WoodAxe)
+
 
 class WoodSword(Item):
     def getTexturFile(self):
@@ -126,7 +133,9 @@ class WoodSword(Item):
     def getFuelAmount(self):
         return 10
 
+
 handler.register(WoodSword)
+
 
 class WoodHoe(Item):
     def getTexturFile(self):

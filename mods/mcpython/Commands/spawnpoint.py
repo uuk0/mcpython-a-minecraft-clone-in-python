@@ -1,5 +1,6 @@
 from . import Command
 
+
 class spawnpoint(Command.Command):
     @staticmethod
     def getHelp():
@@ -11,7 +12,7 @@ class spawnpoint(Command.Command):
 
     @staticmethod
     def getSyntaxError(line, entity, position, chat):
-        #todo: add syntax-system
+        # todo: add syntax-system
         return None
 
     @staticmethod
@@ -24,5 +25,6 @@ class spawnpoint(Command.Command):
             entity = [entity]
         for en in entity:
             en.getInst().window.spawnpoint = pos
+
 
 Command.handler.register(spawnpoint)

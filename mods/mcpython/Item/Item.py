@@ -1,7 +1,8 @@
-
 from destroyGroup import *
-#from Inventorys.Inventory import handler as invhandler
+
+# from Inventorys.Inventory import handler as invhandler
 import globals as G
+
 
 class ItemHandler:
     def __init__(self):
@@ -19,13 +20,15 @@ class ItemHandler:
             if name in self.nametoitem:
                 return self.nametoitem[name]
             for pre in self.prefixes:
-                if pre+":"+name in self.nametoitem:
-                    return self.nametoitem[pre+":"+name]
-            print("[ERROR] "+str(name)+" not found")
+                if pre + ":" + name in self.nametoitem:
+                    return self.nametoitem[pre + ":" + name]
+            print("[ERROR] " + str(name) + " not found")
             return None
         return name()
 
+
 handler = ItemHandler()
+
 
 class LiquidBucketHandler:
     def __init__(self):
@@ -40,7 +43,9 @@ class LiquidBucketHandler:
     def registerHolder(self, itemclass):
         self.holders.append(itemclass)
 
+
 liquidhandler = LiquidBucketHandler()
+
 
 class Item:
     def __init__(self):
@@ -61,7 +66,7 @@ class Item:
         return 64
 
     def getToolHardness(self):
-        return 1 #1/n multiplier
+        return 1  # 1/n multiplier
 
     def getAttackDamage(self):
         return 1
@@ -76,7 +81,7 @@ class Item:
         return []
 
     def __call__(self):
-        obj =  self.__class__()
+        obj = self.__class__()
         obj.blocknbt = self.blocknbt.copy()
         return obj
 
@@ -84,7 +89,8 @@ class Item:
         return 0
 
     def on_right_click(self, block, previos, button, modifiers):
-        if not block: return
+        if not block:
+            return
         if G.model.world[block].hasInventory():
             invhandler.show(G.model.world[block].getInventoryID())
         else:
@@ -108,7 +114,7 @@ class Item:
     def getToolMaterial(self):
         return None
 
-    def getOreMaterial(self): #used for in-placing
+    def getOreMaterial(self):  # used for in-placing
         return None
 
     def getLiquidHoldName(self):
@@ -126,10 +132,10 @@ class Item:
     def getBlockName(self):
         return self.getName()
 
-    def isEatAble(self): #!
+    def isEatAble(self):  #!
         return False
 
-    def getHungerReward(self): #!
+    def getHungerReward(self):  #!
         return 0
 
     def canInteractWith(self, block):

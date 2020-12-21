@@ -1,5 +1,6 @@
 from .Item import *
 
+
 class melon(Item):
     def getName(self):
         return "minecraft:melon"
@@ -9,5 +10,6 @@ class melon(Item):
 
     def hasBlock(self):
         return False
+
 
 handler.register(melon)

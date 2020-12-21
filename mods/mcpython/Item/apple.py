@@ -1,5 +1,6 @@
 from .Item import *
 
+
 class Apple(Item):
     def getName(self):
         return "minecraft:apple"
@@ -12,5 +13,6 @@ class Apple(Item):
 
     def isEatAble(self):
         return True
+
 
 handler.register(Apple)

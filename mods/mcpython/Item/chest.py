@@ -1,5 +1,6 @@
 from .Item import *
 
+
 class chest(Item):
     def getName(self):
         return "minecraft:chest"
@@ -9,5 +10,6 @@ class chest(Item):
 
     def getFuelAmount(self):
         return 20
+
 
 handler.register(chest)

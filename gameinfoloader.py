@@ -1,7 +1,8 @@
 import config, pickle, globals as G
 
+
 def loadData():
-    with open(G.local+"/gameinfo.dat", mode="rb") as f:
+    with open(G.local + "/gameinfo.dat", mode="rb") as f:
         data = pickle.load(f)
     config.CONFIGS["info"] = data
     config.CONFIGS["GAME_VERSION"] = data["version_name"]

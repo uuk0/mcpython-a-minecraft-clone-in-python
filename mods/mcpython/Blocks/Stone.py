@@ -1,5 +1,6 @@
 from .Block import *
 
+
 @handler
 class Stone(Block):
     def getTex(self):
@@ -20,6 +21,7 @@ class Stone(Block):
     def getHardness(self):
         return 1.5
 
+
 @handler
 class Diorit(Block):
     def getTex(self):
@@ -38,6 +40,7 @@ class Diorit(Block):
 
     def getHardness(self):
         return 1.5
+
 
 @handler
 class PolishedDiorit(Diorit):

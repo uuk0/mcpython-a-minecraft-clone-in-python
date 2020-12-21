@@ -1,10 +1,13 @@
 from . import Command
 
+
 class teleport(Command.Command):
     @staticmethod
     def getHelp():
-        return ["/teleport <entity> <x> <y> <z>: teleport the entity to given position",
-                "/tp <entity> <x> <y> <z>: teleport the entity to given position"]
+        return [
+            "/teleport <entity> <x> <y> <z>: teleport the entity to given position",
+            "/tp <entity> <x> <y> <z>: teleport the entity to given position",
+        ]
 
     @staticmethod
     def isCommand(line):
@@ -12,7 +15,7 @@ class teleport(Command.Command):
 
     @staticmethod
     def getSyntaxError(line, entity, position, chat):
-        #todo: add syntax-system
+        # todo: add syntax-system
         return None
 
     @staticmethod

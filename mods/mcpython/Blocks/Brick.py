@@ -19,4 +19,5 @@ class Brick(Block):
     def getId(self):
         return 45
 
+
 handler.register(Brick)

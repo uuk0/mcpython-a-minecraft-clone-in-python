@@ -1,5 +1,6 @@
 from .Item import *
 
+
 class BakedPortato(Item):
     def getName(self):
         return "minecraft:baked_portato"
@@ -12,5 +13,6 @@ class BakedPortato(Item):
 
     def isEatAble(self):
         return True
+
 
 handler.register(BakedPortato)

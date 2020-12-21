@@ -1,6 +1,7 @@
 from .Item import *
 from oredictnames import OreDict
 
+
 class Diamond(Item):
     def getName(self):
         return "minecraft:diamond"
@@ -16,5 +17,6 @@ class Diamond(Item):
 
     def getOreDictNames(self):
         return [OreDict.ORE_DROP]
+
 
 handler.register(Diamond)

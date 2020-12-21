@@ -2,6 +2,7 @@ from .Block import *
 import random
 import globals as G
 
+
 @handler
 class CoalOre(Block):
     def getTex(self):

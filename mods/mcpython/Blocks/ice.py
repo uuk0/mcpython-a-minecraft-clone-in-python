@@ -1,6 +1,7 @@
 from .Block import *
 from destroyGroup import destroyGroups
 
+
 @handler
 class BlueIce(Block):
     def getTex(self):
@@ -16,12 +17,13 @@ class BlueIce(Block):
         return 14
 
     def getId(self):
-        return -1 #Can't find an ID
+        return -1  # Can't find an ID
 
     def getHardness(self):
         return 2.8
 
     destroygroups = [destroyGroups.PIKAXE]
+
 
 @handler
 class Ice(Block):
@@ -44,6 +46,7 @@ class Ice(Block):
         return 0.5
 
     destroygroups = [destroyGroups.PIKAXE]
+
 
 @handler
 class PackedIce(Block):

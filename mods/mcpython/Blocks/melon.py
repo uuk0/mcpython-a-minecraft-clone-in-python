@@ -15,4 +15,5 @@ class Melon(Block):
     drops = ["minecraft:melon"]
     destroygroups = [destroyGroups.AXE]
 
+
 handler.register(Melon)

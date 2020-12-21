@@ -2,6 +2,7 @@ from .Item import *
 from destroyGroup import *
 from oredictnames import OreDict
 
+
 class goldShovel(Item):
     def getName(self):
         return "minecraft:gold_shovel"
@@ -29,7 +30,9 @@ class goldShovel(Item):
     def getToolMaterial(self):
         return "minecraft:gold"
 
+
 handler.register(goldShovel)
+
 
 class goldPickAxe(Item):
     def getTexturFile(self):
@@ -58,7 +61,9 @@ class goldPickAxe(Item):
     def getToolMaterial(self):
         return "minecraft:gold"
 
+
 handler.register(goldPickAxe)
+
 
 class goldAxe(Item):
     def getTexturFile(self):
@@ -87,7 +92,9 @@ class goldAxe(Item):
     def getToolMaterial(self):
         return "minecraft:gold"
 
+
 handler.register(goldAxe)
+
 
 class goldSword(Item):
     def getTexturFile(self):
@@ -114,7 +121,9 @@ class goldSword(Item):
     def getToolMaterial(self):
         return "minecraft:gold"
 
+
 handler.register(goldSword)
+
 
 class goldHoe(Item):
     def getTexturFile(self):

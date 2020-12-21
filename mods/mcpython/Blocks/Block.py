@@ -1,18 +1,19 @@
-
 from mathhelper import *
 from texturGroups import handler as texturhandler
 from moduls import *
 from destroyGroup import *
 import texturGroups
 
+
 class Block:
     def __init__(self, pos, hitblock=None, register=False):
         self.pos = pos
         self.redstone_level = self.defaultRedstoneLevel()
-        if not register: self.on_creat()
+        if not register:
+            self.on_creat()
 
     def getTex(self):
-        print("[ERROR] unknown block-definition-tex: "+str(self))
+        print("[ERROR] unknown block-definition-tex: " + str(self))
         raise RuntimeError()
 
     def update(self, model, window):
@@ -38,13 +39,14 @@ class Block:
     def getDropAmount(self, item):
         return self.dropamounts
 
-    drops = [None] #if first == None, None is replaced by blockname
+    drops = [None]  # if first == None, None is replaced by blockname
 
     def getDrop(self, item):
-        if self.drops[0] == None: self.drops[0] = self.getItemName()
+        if self.drops[0] == None:
+            self.drops[0] = self.getItemName()
         return self.drops
 
-    def hasHitbox(self, item): #!?
+    def hasHitbox(self, item):  #!?
         return True
 
     destroygroups = []
@@ -55,17 +57,17 @@ class Block:
     def getHardness(self):
         return 1
 
-    def getBrakeSoundFile(self): #!
+    def getBrakeSoundFile(self):  #!
         return "./sounds/dig/stone1.ogg"
 
     def getVisualName(self):
         return self.getName()
 
-    def redstoneStateUpdate(self, model, world): #!
+    def redstoneStateUpdate(self, model, world):  #!
         pass
 
     def __call__(self, *args, **kwargs):
-        obj =  self.__class__(*args, **kwargs)
+        obj = self.__class__(*args, **kwargs)
         obj.setAllNBT(self.getAllItemNBT())
 
     def getInfoData(self):
@@ -104,10 +106,13 @@ class Block:
         texture_data = list(texture)
         # create vertex list
         # FIXME Maybe `add_indexed()` should be used instead
-        model._shown[position] = model.batch.add(24, GL_QUADS,
-                                               texturGroups.handler.getGroup(model.world[position].getTexturFile()),
-                                               ('v3f/static', vertex_data),
-                                               ('t2f/static', texture_data))
+        model._shown[position] = model.batch.add(
+            24,
+            GL_QUADS,
+            texturGroups.handler.getGroup(model.world[position].getTexturFile()),
+            ("v3f/static", vertex_data),
+            ("t2f/static", texture_data),
+        )
 
     def hide(self, model, window):
         position = self.pos
@@ -136,22 +141,22 @@ class Block:
     def getInventorys(self):
         return self.inventorys
 
-    def hasAlpha(self): #!
+    def hasAlpha(self):  #!
         return False
 
-    def hasEnergyStorage(self, side): #!
+    def hasEnergyStorage(self, side):  #!
         return False
 
-    def getMaxEnergyStorage(self, side): #!
+    def getMaxEnergyStorage(self, side):  #!
         return 0
 
-    def getEnergyMode(self, side): #!
-        return 0 #0: none, 1: only output, 2: only input, 3: balance, 4: input / output if nesesary (fill other maschines before)
+    def getEnergyMode(self, side):  #!
+        return 0  # 0: none, 1: only output, 2: only input, 3: balance, 4: input / output if nesesary (fill other maschines before)
 
-    def getEnergyPriority(self, side): #!
+    def getEnergyPriority(self, side):  #!
         return 0
 
-    def getStoredEnergy(self, side): #!
+    def getStoredEnergy(self, side):  #!
         return 0
 
     def getId(self):
@@ -163,10 +168,12 @@ class Block:
     def setStoreData(self, data):
         pass
 
-    def getPlayerDamage(self): #the damge when a player is standing near the block (d<0.2)
+    def getPlayerDamage(
+        self,
+    ):  # the damge when a player is standing near the block (d<0.2)
         return 0
 
-    def getBlastResistence(self): #get the resistance of the block when exploding
+    def getBlastResistence(self):  # get the resistance of the block when exploding
         return 0
 
     def isFlameAble(self):
@@ -183,6 +190,7 @@ class Block:
 
     def on_destroy(self):
         pass
+
 
 class BlockHandler:
     def __init__(self):
@@ -206,8 +214,8 @@ class BlockHandler:
             if name in self.blocks:
                 return self.blocks[name]
             for pre in self.prefixes:
-                if pre+":"+name in self.blocks:
-                    return self.blocks[pre+":"+name]
+                if pre + ":" + name in self.blocks:
+                    return self.blocks[pre + ":" + name]
             return None
         else:
             return name
@@ -218,9 +226,9 @@ class BlockHandler:
 
 handler = BlockHandler()
 
+
 class BlockState:
     def __init__(self, blockid, position):
         self.blockid = blockid
         self.position = position
         self.blockclass = handler.getById(blockid)
-

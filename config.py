@@ -1,8 +1,8 @@
-﻿
-import mods.mcpython.structures as structures
+﻿import mods.mcpython.structures as structures
 import globals as G
 
 CONFIGS = {}
+
 
 def convertOption(option_value):
     while option_value.startswith(" "):
@@ -29,8 +29,9 @@ def convertOption(option_value):
             pass
     return option_value
 
+
 def loadConfig():
-    f = open(G.local+"/config.txt")
+    f = open(G.local + "/config.txt")
     data = f.read()
     f.close()
     del f
@@ -40,16 +41,28 @@ def loadConfig():
             option_name = e.split("=")[0][0:-1]
             option_value = convertOption(e.split("=")[1])
             CONFIGS[option_name] = option_value
-    CONFIGS["init"] = {"GAME_STATES":["game", "chat", "demo_info", "esc_menü", "start_menü", "loading", "inventory", "worldselect"]}
-    f = open(G.local+"/initscript.txt")
+    CONFIGS["init"] = {
+        "GAME_STATES": [
+            "game",
+            "chat",
+            "demo_info",
+            "esc_menü",
+            "start_menü",
+            "loading",
+            "inventory",
+            "worldselect",
+        ]
+    }
+    f = open(G.local + "/initscript.txt")
     data = f.read()[3:]
     f.close()
-    exec("from moduls import *\nclass keys:\n   FORWARD='forward:key'; BACKWARD='backward:key'; RIGHT='right:key';LEFT='left:key';JUMP='jump:key';escape='escape:key';toggleflying='togleflying:key';inventoryslots='inventoryslots:keys';openchat='openchat:key';openinventory='openinventory:key';MOVECAMERA='movecamera:key'\n"+data, CONFIGS["init"])
+    exec(
+        "from mods.mcpython.moduls import *\nclass keys:\n   FORWARD='forward:key'; BACKWARD='backward:key'; RIGHT='right:key';LEFT='left:key';JUMP='jump:key';escape='escape:key';toggleflying='togleflying:key';inventoryslots='inventoryslots:keys';openchat='openchat:key';openinventory='openinventory:key';MOVECAMERA='movecamera:key'\n"
+        + data,
+        CONFIGS["init"],
+    )
+
 
 loadConfig()
 for e in CONFIGS["init"]["STRUCTURES"]:
-    structures.Structur(e)
-
-
-
-
+    structures.Structure(e)

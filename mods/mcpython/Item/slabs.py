@@ -1,5 +1,6 @@
 from .Item import *
 
+
 class Wood_0_Slab(Item):
     def __init__(self):
         Item.__init__(self)

@@ -1,13 +1,14 @@
 from .Block import *
 
 FACES = [
-    ( 0, 1, 0),
-    ( 0,-1, 0),
+    (0, 1, 0),
+    (0, -1, 0),
     (-1, 0, 0),
-    ( 1, 0, 0),
-    ( 0, 0, 1),
-    ( 0, 0,-1),
+    (1, 0, 0),
+    (0, 0, 1),
+    (0, 0, -1),
 ]
+
 
 class redstone_lamp_on(Block):
     def getName(self):
@@ -26,7 +27,7 @@ class redstone_lamp_on(Block):
                     flag = True
         if not flag:
             model.add_block(self.pos, "minecraft:redstone_lamp")
-            #print("[DEBUG] redstone lamp state change to low")
+            # print("[DEBUG] redstone lamp state change to low")
 
     def getItemName(self):
         return "minecraft:redstone_lamp"
@@ -38,5 +39,6 @@ class redstone_lamp_on(Block):
         self.update(model, world)
 
     destroygroups = [destroyGroups.PIKAXE]
+
 
 handler.register(redstone_lamp_on)

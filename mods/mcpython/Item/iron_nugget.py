@@ -1,5 +1,6 @@
 from .Item import *
 
+
 class iron_nugget(Item):
     def getName(self):
         return "minecraft:iron_nugget"
@@ -9,5 +10,6 @@ class iron_nugget(Item):
 
     def hasBlock(self):
         return False
+
 
 handler.register(iron_nugget)

@@ -1,6 +1,7 @@
 from .Block import *
 from . import wood_log
 
+
 class BoneBlock(wood_log.WoodLog):
     def getName(self):
         return "minecraft:bone_block"
@@ -22,5 +23,6 @@ class BoneBlock(wood_log.WoodLog):
 
     def getId(self):
         return 216
+
 
 handler.register(BoneBlock)

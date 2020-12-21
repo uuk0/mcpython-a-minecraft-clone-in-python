@@ -10,7 +10,7 @@ class LootChest:
         pass
 
     def getItems(self):
-        return [] #element: [name, amount]
+        return []  # element: [name, amount]
 
     def getID(self):
         return "minecraft:loottable:null"
@@ -32,12 +32,19 @@ class LootChest:
     def isRandomCalc(self):
         return True
 
+
 class StartChest(LootChest):
     def getItems(self):
-        return [["minecraft:wood_shovel", 1], ["minecraft:wood_axe", 1], ["minecraft:wood_pick_axe", 1],
-                ["minecraft:stick", 4], ["minecraft:wood_log_0", 10]]
+        return [
+            ["minecraft:wood_shovel", 1],
+            ["minecraft:wood_axe", 1],
+            ["minecraft:wood_pick_axe", 1],
+            ["minecraft:stick", 4],
+            ["minecraft:wood_log_0", 10],
+        ]
 
     def getID(self):
         return "minecraft:loottable:startchest"
 
-LOOTCHESTS = {StartChest().getID():StartChest}
+
+LOOTCHESTS = {StartChest().getID(): StartChest}

@@ -1,6 +1,7 @@
 from .Block import *
 from oredictnames import *
 
+
 @handler
 class Obsidian(Block):
     def getTex(self):
@@ -12,7 +13,12 @@ class Obsidian(Block):
     destroygroups = [destroyGroups.PIKAXE]
 
     def getDrop(self, item):
-        return self.getName() if item.getDestroyGroup() == destroyGroups.PIKAXE and item.getToolMaterial() == "minecraft:diamond" else []
+        return (
+            self.getName()
+            if item.getDestroyGroup() == destroyGroups.PIKAXE
+            and item.getToolMaterial() == "minecraft:diamond"
+            else []
+        )
 
     def getBlastResistence(self):
         return 6000
@@ -22,4 +28,3 @@ class Obsidian(Block):
 
     def getHardness(self):
         return 50
-

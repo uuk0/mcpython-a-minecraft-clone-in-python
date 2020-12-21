@@ -1,5 +1,6 @@
 from .Item import *
 
+
 class Stick(Item):
     def getName(self):
         return "minecraft:stick"
@@ -12,5 +13,6 @@ class Stick(Item):
 
     def getFuelAmount(self):
         return 20
+
 
 handler.register(Stick)

@@ -1,5 +1,6 @@
 from .Item import *
 
+
 class Endstone(Item):
     def getName(self):
         return "minecraft:endstone"
@@ -7,7 +8,9 @@ class Endstone(Item):
     def getTexturFile(self):
         return "./assets/textures/items/end_stone.png"
 
+
 handler.register(Endstone)
+
 
 class Endbrick(Item):
     def getName(self):
@@ -15,5 +18,6 @@ class Endbrick(Item):
 
     def getTexturFile(self):
         return "./assets/textures/items/end_brick.png"
+
 
 handler.register(Endbrick)

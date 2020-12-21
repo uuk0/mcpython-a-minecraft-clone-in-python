@@ -1,6 +1,7 @@
 from .Block import *
 import globals as G
 
+
 class Barrier(Block):
     def getTex(self):
         return None
@@ -16,5 +17,6 @@ class Barrier(Block):
 
     def hide(self, model, window):
         pass
+
 
 handler.register(Barrier)

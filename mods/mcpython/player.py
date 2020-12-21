@@ -15,11 +15,14 @@ from Inventorys.Inventory import Slot, handler as invhandler, InventoryHandler
 import EventHandler
 import entity
 
+
 class player:
     def __init__(self, window):
         self.inventory = PlayerInventory(window, self)
-        self.mode = 1 #0:nichts, 1:hotbar, 2:survival_inventory, 3:creativ_inventory, 4: creativ_tab [self.creativ_tab_id], 5: crafting_table
-        self.gamemode = config.CONFIGS["DEFAULT_GAMEMODE"] #0:surivival, 1:creativ, 2:hardcore, 3:spectator
+        self.mode = 1  # 0:nichts, 1:hotbar, 2:survival_inventory, 3:creativ_inventory, 4: creativ_tab [self.creativ_tab_id], 5: crafting_table
+        self.gamemode = config.CONFIGS[
+            "DEFAULT_GAMEMODE"
+        ]  # 0:surivival, 1:creativ, 2:hardcore, 3:spectator
         self.falling = False
         self.fallhigh = 0
         self.harts = 20
@@ -29,11 +32,12 @@ class player:
         self.block = None
         invhandler.show(0)
         self.dimension = 0
-        self.inventorys = [self.inventory.hotbar,
-                           self.inventory.rows,
-                           self.inventory.armor,
-                           self.inventory.crafting
-                           ]
+        self.inventorys = [
+            self.inventory.hotbar,
+            self.inventory.rows,
+            self.inventory.armor,
+            self.inventory.crafting,
+        ]
 
         self.xp = 0
         self.hunger = 8
@@ -79,7 +83,7 @@ class player:
 
     def getPlace(self, id):
         return invhandler.sfromid[id].item
-            
+
     def getSlot(self, id):
         return invhandler.inventoryslotsinst[id]
 
@@ -87,9 +91,11 @@ class player:
         if self.harts == 0 and self.gamemode != 3 and self.gamemode != 1:
             self.window.kill("player hearts go down")
 
+
 class PlayerInventory:
     def __init__(self, window, master):
-        self.window = window; self.master = master
+        self.window = window
+        self.master = master
         self.hotbar = player_hotbar.hotbar()
         self.rows = player_rows.rows()
         self.armor = player_armor.armor()
@@ -107,12 +113,17 @@ class PlayerInventory:
     def on_mouse_press(self, eventname, x, y, button, modifiers):
         if button == mouse.LEFT:
             if not self.moving_slot:
-                #self.moving_slot = self.none_slot
+                # self.moving_slot = self.none_slot
                 self.moving_slot = self.getPress(x, y)
                 if self.moving_slot:
                     if invhandler.inventoryslotsinst[self.moving_slot.id].item:
-                        self.moving_start = (invhandler.inventoryslotsinst[self.moving_slot.id].x, invhandler.inventoryslotsinst[self.moving_slot.id].y)
-                        self.moving_slot = invhandler.inventoryslotsinst[self.moving_slot.id]
+                        self.moving_start = (
+                            invhandler.inventoryslotsinst[self.moving_slot.id].x,
+                            invhandler.inventoryslotsinst[self.moving_slot.id].y,
+                        )
+                        self.moving_slot = invhandler.inventoryslotsinst[
+                            self.moving_slot.id
+                        ]
                     else:
                         self.moving_slot = None
                 else:
@@ -129,7 +140,10 @@ class PlayerInventory:
                 itemB = end.item
                 amountA = self.moving_slot.amount
                 amountB = end.amount
-                if self.moving_slot == self.crafting.slots[4] or self.moving_slot.stid == "minecraft:slot:crafting_table:out":
+                if (
+                    self.moving_slot == self.crafting.slots[4]
+                    or self.moving_slot.stid == "minecraft:slot:crafting_table:out"
+                ):
                     cb.craftinghandler.removeOutput_player(self.master)
                     self.moving_slot.x, self.moving_slot.y = 531, 287
                     self.resetMovingSlot()
@@ -169,7 +183,13 @@ class PlayerInventory:
         elif button == mouse.RIGHT:
             if self.moving_slot:
                 slot = self.getPress(x, y)
-                if slot and ((slot.item and slot.item.getName() == self.moving_slot.item.getName()) or not slot.item):
+                if slot and (
+                    (
+                        slot.item
+                        and slot.item.getName() == self.moving_slot.item.getName()
+                    )
+                    or not slot.item
+                ):
                     if slot.amount + 1 <= self.moving_slot.item.getMaxStackSize():
                         slot.amount += 1
                         slot.setItem(self.moving_slot.item.getName())
@@ -178,9 +198,14 @@ class PlayerInventory:
                             self.moving_slot.x, self.moving_slot.y = self.moving_start
                             self.moving_slot = None
                             cb.craftinghandler.updateOutput_player(self.master)
-        elif button == mouse.MIDDLE and not self.moving_slot and self.master.gamemode == 1:
+        elif (
+            button == mouse.MIDDLE
+            and not self.moving_slot
+            and self.master.gamemode == 1
+        ):
             slot = self.getPress(x, y)
-            if not slot.item: return
+            if not slot.item:
+                return
             self.moving_slot = self.none_slot
             self.moving_start = (0, 0)
             self.moving_slot.setItem(slot.item)
@@ -223,33 +248,48 @@ class PlayerInventory:
     def on_shift(self):
         pass
 
+
 playerinst = None
 
 import texturGroups
+
 
 class PlayerHartHandler:
     def __init__(self, player):
         self.player = player
         res = texturGroups.handler.groups["./assets/textures/gui/icons/harts_no.png"]
-        self.sprites = [pyglet.sprite.Sprite(res), pyglet.sprite.Sprite(res), pyglet.sprite.Sprite(res), pyglet.sprite.Sprite(res), pyglet.sprite.Sprite(res),
-                        pyglet.sprite.Sprite(res), pyglet.sprite.Sprite(res), pyglet.sprite.Sprite(res), pyglet.sprite.Sprite(res), pyglet.sprite.Sprite(res)]  #pyglet.sprite.Sprite(texturGroups.handler.groups[imagefile])
+        self.sprites = [
+            pyglet.sprite.Sprite(res),
+            pyglet.sprite.Sprite(res),
+            pyglet.sprite.Sprite(res),
+            pyglet.sprite.Sprite(res),
+            pyglet.sprite.Sprite(res),
+            pyglet.sprite.Sprite(res),
+            pyglet.sprite.Sprite(res),
+            pyglet.sprite.Sprite(res),
+            pyglet.sprite.Sprite(res),
+            pyglet.sprite.Sprite(res),
+        ]  # pyglet.sprite.Sprite(texturGroups.handler.groups[imagefile])
         for i, e in enumerate(self.sprites):
-            x = i*20 + 190
+            x = i * 20 + 190
             y = 80
             e.position = (x, y)
-
 
     def draw(self):
         if self.player.gamemode == 1 or self.player.gamemode == 3:
             return
         harts = self.player.harts
         for i, e in enumerate(self.sprites):
-            if 2*(i+1) > harts:
-                e.image = texturGroups.handler.groups["./assets/textures/gui/icons/harts_no.png"]
-            elif i*2 < harts or (harts % 2 == 0 and i*2 == harts):
-                e.image = texturGroups.handler.groups["./assets/textures/gui/icons/hart_full.png"]
+            if 2 * (i + 1) > harts:
+                e.image = texturGroups.handler.groups[
+                    "./assets/textures/gui/icons/harts_no.png"
+                ]
+            elif i * 2 < harts or (harts % 2 == 0 and i * 2 == harts):
+                e.image = texturGroups.handler.groups[
+                    "./assets/textures/gui/icons/hart_full.png"
+                ]
             else:
-                e.image = texturGroups.handler.groups["./assets/textures/gui/icons/hart_half.png"]
+                e.image = texturGroups.handler.groups[
+                    "./assets/textures/gui/icons/hart_half.png"
+                ]
             e.draw()
-
-

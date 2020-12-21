@@ -1,6 +1,7 @@
 from .Item import *
 from oredictnames import OreDict
 
+
 class Coal(Item):
     def getName(self):
         return "minecraft:coal"
@@ -19,5 +20,6 @@ class Coal(Item):
 
     def getFuelAmount(self):
         return 40
+
 
 handler.register(Coal)

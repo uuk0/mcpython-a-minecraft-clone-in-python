@@ -1,6 +1,7 @@
 from moduls import *
 import globals as G
 
+
 class handler:
     def __init__(self):
         self.files = []
@@ -8,14 +9,15 @@ class handler:
 
     def register(self, file, id=None, type=0):
         of = file
-        file = G.local+file[1:]
-        if id == None: id = of
+        file = G.local + file[1:]
+        if id == None:
+            id = of
         if not file in self.files:
-            if type == 0: #structur-file for block-rendering
-                print("[texturhandler/INFO] adding textur file: "+file)
+            if type == 0:  # structur-file for block-rendering
+                print("[texturhandler/INFO] adding textur file: " + file)
                 self.files.append(file)
                 self.groups[id] = TextureGroup(pyglet.image.load(file).get_texture())
-            elif type == 1: #image-file for sprites
+            elif type == 1:  # image-file for sprites
                 image = pyglet.image.load(file)
                 self.files.append(file)
                 self.groups[id] = image
@@ -31,15 +33,15 @@ handler.register("./assets/textures/blocks/texture2.png", id=1)
 handler.register("./assets/textures/blocks/texture.png", type=1)
 handler.register("./assets/textures/blocks/texture2.png", type=1)
 
-handler.register('./assets/textures/gui/chest.png', type=1)
-handler.register('./assets/textures/gui/crafting_table.png', type=1)
-handler.register('./assets/textures/gui/furnace.png', type=1)
-handler.register('./assets/textures/gui/hotbar_image.png', type=1)
-handler.register('./assets/textures/gui/inventory_clear.png', type=1)
+handler.register("./assets/textures/gui/chest.png", type=1)
+handler.register("./assets/textures/gui/crafting_table.png", type=1)
+handler.register("./assets/textures/gui/furnace.png", type=1)
+handler.register("./assets/textures/gui/hotbar_image.png", type=1)
+handler.register("./assets/textures/gui/inventory_clear.png", type=1)
 
-for e in os.listdir(G.local+"/assets/textures/items"):
+for e in os.listdir(G.local + "/assets/textures/items"):
     if e.endswith(".png"):
-        handler.register('./assets/textures/items/'+e, type=1)
+        handler.register("./assets/textures/items/" + e, type=1)
 
 handler.register("./assets/textures/gui/demomsg.png", type=1)
 handler.register("./assets/textures/gui/optionbackground_A.png", type=1)

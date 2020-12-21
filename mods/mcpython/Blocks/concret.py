@@ -3,6 +3,7 @@ from .fallingblock import FallingBlock
 
 
 for id in range(0, 16):
+
     class Concret(Block):
         def getTexturFile(self):
             return 1
@@ -11,12 +12,11 @@ for id in range(0, 16):
             return tex_coords((0, id), (0, id), (0, id))
 
         def getName(self):
-            return "minecraft:concret_"+str(id)
+            return "minecraft:concret_" + str(id)
 
         destroygroups = [destroyGroups.PIKAXE]
 
     handler.register(Concret)
-
 
     class ConcretPowder(FallingBlock):
         def getTexturFile(self):
@@ -29,6 +29,5 @@ for id in range(0, 16):
             return "minecraft:concret_powder_" + str(id)
 
         destroygroups = [destroyGroups.SHOVEL]
-
 
     handler.register(ConcretPowder)

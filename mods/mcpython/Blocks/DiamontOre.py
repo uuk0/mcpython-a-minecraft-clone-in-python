@@ -20,7 +20,10 @@ class DiamondOre(Block):
         G.player.xp += random.randint(3, 7)
 
     def isBreakAbleWithItem(self, item):
-        if item and (item.getName() == "minecraft:iron_pick_axe" or item.getName() == "minecraft:diamond_pick_axe"):
+        if item and (
+            item.getName() == "minecraft:iron_pick_axe"
+            or item.getName() == "minecraft:diamond_pick_axe"
+        ):
             return True
         if G.player.gamemode == 1:
             return True
@@ -36,5 +39,6 @@ class DiamondOre(Block):
 
     def getId(self):
         return 56
+
 
 handler.register(DiamondOre)

@@ -25,7 +25,7 @@ try:
 
     import Item
 
-#    from Block import *
+    #    from Block import *
 
     import WorldHandler
 
@@ -45,9 +45,9 @@ try:
     import GameStartup
 
     for e in config.CONFIGS["init"]["STRUCTURES"]:
-        structures.Structur(e)
+        structures.Structure(e)
 
-    #FIXME: wood_log nbt / sides are not correct
+    # FIXME: wood_log nbt / sides are not correct
 
     print("[INFO] preconfigurate python differents")
 
@@ -73,9 +73,7 @@ try:
     print("[INFO] definiting config-functions for game-init")
 
     def setup_fog():
-        """ Configure the OpenGL fog properties.
-
-        """
+        """Configure the OpenGL fog properties."""
         # Enable fog. Fog "blends a fog color with each rasterized pixel fragment's
         # post-texturing color."
         glEnable(GL_FOG)
@@ -90,11 +88,8 @@ try:
         glFogf(GL_FOG_START, 60.0)
         glFogf(GL_FOG_END, 80.0)
 
-
     def setup():
-        """ Basic OpenGL configuration.
-
-        """
+        """Basic OpenGL configuration."""
         # Set the color of "clear", i.e. the sky, in rgba.
         glClearColor(0.5, 0.69, 1.0, 1)
         # Enable culling (not rendering) of back-facing facets -- facets that aren't
@@ -116,12 +111,18 @@ try:
 
     print("[INFO] starting game")
 
-    window = Window(width=config.CONFIGS["DEFAULT_WINDOW_SIZE"][0], height=config.CONFIGS["DEFAULT_WINDOW_SIZE"][1], caption="mcpython version "+config.CONFIGS["GAME_VERSION"], resizable=True)
+    window = Window(
+        width=config.CONFIGS["DEFAULT_WINDOW_SIZE"][0],
+        height=config.CONFIGS["DEFAULT_WINDOW_SIZE"][1],
+        caption="mcpython version " + config.CONFIGS["GAME_VERSION"],
+        resizable=True,
+    )
     chat.window = window
     G.window = window
     G.model = window.model
     G.player = window.player
     import chat
+
     chat.register()
     GameStartup.start(window, creat=False)
 
@@ -130,7 +131,9 @@ try:
     invhandler.window = window
 except:
     import exceptionhandler
+
     exceptionhandler.addTraceback()
+
 
 def run():
     try:
@@ -144,6 +147,9 @@ def run():
         pyglet.app.run()
     except:
         import exceptionhandler
+
         exceptionhandler.addTraceback()
 
-def init(): pass
+
+def init():
+    pass

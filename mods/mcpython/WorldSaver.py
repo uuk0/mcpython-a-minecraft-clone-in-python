@@ -11,9 +11,10 @@ import globals as G
 SAVE_VERSION = "0.2.2"
 COMPATIBLE = [SAVE_VERSION]
 
+
 def loadWorld(model, name):
-    if not os.path.isdir("./saves/"+name):
-        print("[ERROR] no save found named "+name)
+    if not os.path.isdir("./saves/" + name):
+        print("[ERROR] no save found named " + name)
         return
     f = open("./saves/" + name + "/world.dat", mode="rb")
     worlddata = pickle.load(f)
@@ -56,17 +57,29 @@ def loadWorld(model, name):
     f = open("./saves/" + name + "/inventory.dat", mode="rb")
     invdata = pickle.load(f)
     f.close()
-    if worlddata[0] != SAVE_VERSION or worlddata[1] != config.CONFIGS["GAME_VERSION"]:#
+    if (
+        worlddata[0] != SAVE_VERSION or worlddata[1] != config.CONFIGS["GAME_VERSION"]
+    ):  #
         saveWorld(model, name)
 
+
 def saveWorld(model, name):
-    if not name: return
-    if not os.path.isdir("./saves/"+name):
-        os.makedirs("./saves/"+name)
-    playerdata = [model.window.player.mode, model.window.player.gamemode, model.window.player.harts,
-                  model.window.player.xp, model.window.player.hunger, model.window.hotbarelement,
-                  time.time() - model.window.demostarttime, model.window.position, model.window.rotation]
-    f = open("./saves/"+name+"/player.dat", mode="wb")
+    if not name:
+        return
+    if not os.path.isdir("./saves/" + name):
+        os.makedirs("./saves/" + name)
+    playerdata = [
+        model.window.player.mode,
+        model.window.player.gamemode,
+        model.window.player.harts,
+        model.window.player.xp,
+        model.window.player.hunger,
+        model.window.hotbarelement,
+        time.time() - model.window.demostarttime,
+        model.window.position,
+        model.window.rotation,
+    ]
+    f = open("./saves/" + name + "/player.dat", mode="wb")
     pickle.dump(playerdata, f)
     f.close()
     sectors = model.sectors.keys()
@@ -80,22 +93,34 @@ def saveWorld(model, name):
         blocklist = {}
         for pos in model.sectors[e]:
             block = model.world[pos]
-            blocklist[pos] = [block.getName(), block.getAllNBT(), block.redstone_level, block.getStoreData()]
-        f = open("./saves/" + name + "/sectors/sector_"+str(sid-1)+".chunk", mode="wb")
+            blocklist[pos] = [
+                block.getName(),
+                block.getAllNBT(),
+                block.redstone_level,
+                block.getStoreData(),
+            ]
+        f = open(
+            "./saves/" + name + "/sectors/sector_" + str(sid - 1) + ".chunk", mode="wb"
+        )
         pickle.dump(blocklist, f)
         f.close()
     model.window.world.chunkdata = sectordata
-    f = open("./saves/"+name+"/level.dat", mode="wb")
+    f = open("./saves/" + name + "/level.dat", mode="wb")
     pickle.dump(sectordata, f)
     f.close()
     inventorydata = []
     for inst in Inventorys.handler.inventoryinst.values():
         linvdata = [inst.id, None if not inst.block else inst.block.pos]
         for e in inst.slots:
-            linvdata.append([None if not e.item else e.item.getName(), None if not e.item else e.amount,
-                             None if not e.item else e.item.getStoreData()])
+            linvdata.append(
+                [
+                    None if not e.item else e.item.getName(),
+                    None if not e.item else e.amount,
+                    None if not e.item else e.item.getStoreData(),
+                ]
+            )
         inventorydata.append(linvdata)
-    f = open("./saves/"+name+"/inventory.dat", mode="wb")
+    f = open("./saves/" + name + "/inventory.dat", mode="wb")
     pickle.dump(inventorydata, f)
     f.close()
     entitydata = []
@@ -103,42 +128,66 @@ def saveWorld(model, name):
         entitydata.append([entity.position])
         for e in entity.getBoxModels():
             entitydata[-1].append([e.position, e.rotation])
-    f = open("./saves/"+name+"/entity.dat", mode="wb")
+    f = open("./saves/" + name + "/entity.dat", mode="wb")
     pickle.dump(entitydata, f)
     f.close()
-    f = open("./saves/"+name+"/world.dat", mode="wb")
-    pickle.dump([SAVE_VERSION, config.CONFIGS["GAME_VERSION"], config.CONFIGS["VERSION_ID"]], f)
+    f = open("./saves/" + name + "/world.dat", mode="wb")
+    pickle.dump(
+        [SAVE_VERSION, config.CONFIGS["GAME_VERSION"], config.CONFIGS["VERSION_ID"]], f
+    )
     f.close()
 
+
 def savePlayerData(name, window):
-    if not name: return
-    if not os.path.isfile("./saves/" + name + "/player.dat"): return
+    if not name:
+        return
+    if not os.path.isfile("./saves/" + name + "/player.dat"):
+        return
     model = window.model
-    playerdata = [model.window.player.mode, model.window.player.gamemode, model.window.player.harts,
-                  model.window.player.xp, model.window.player.hunger, model.window.hotbarelement,
-                  time.time() - model.window.demostarttime, model.window.position, model.window.rotation]
+    playerdata = [
+        model.window.player.mode,
+        model.window.player.gamemode,
+        model.window.player.harts,
+        model.window.player.xp,
+        model.window.player.hunger,
+        model.window.hotbarelement,
+        time.time() - model.window.demostarttime,
+        model.window.position,
+        model.window.rotation,
+    ]
     f = open("./saves/" + name + "/player.dat", mode="wb")
     pickle.dump(playerdata, f)
     f.close()
 
+
 def saveCommandToTMP(worldname, commands):
     raise ValueError()
+
 
 def saveToChunk(chunk, name, command):
     for e in G.window.world.chunkdata:
         if e[0] == chunk:
             id = e[2]
-            f = open("./saves/" + name + "/sectors/sector_" + str(id) + ".chunk", mode="rb")
+            f = open(
+                "./saves/" + name + "/sectors/sector_" + str(id) + ".chunk", mode="rb"
+            )
             cdata = pickle.load(f)
             f.close()
             if command[0] == 0:
                 block = G.model.world[command[1]]
-                cdata[command[1]] = [block.getName(), block.getAllNBT(), block.redstone_level, block.getStoreData()]
+                cdata[command[1]] = [
+                    block.getName(),
+                    block.getAllNBT(),
+                    block.redstone_level,
+                    block.getStoreData(),
+                ]
             elif command[0] == 2:
                 del cdata[command[1]]
             else:
                 raise RuntimeError(command)
-            f = open("./saves/" + name + "/sectors/sector_" + str(id) + ".chunk", mode="wb")
+            f = open(
+                "./saves/" + name + "/sectors/sector_" + str(id) + ".chunk", mode="wb"
+            )
             pickle.dump(cdata, f)
             f.close()
             return
@@ -155,9 +204,8 @@ def cleanUpModel(model):
         eventhandler.unregister_on_event(e if type(e) == int else e[0])
     for e in eventhandler.events["on_draw_2D"]:
         eventhandler.unregister_on_event(e if type(e) == int else e[0])
-    #for e in Inventorys.handler.
+    # for e in Inventorys.handler.
     eventhandler.call("on_model_cleaned_end")
     model.window.set_menu(state)
     chat.chat.chattext = ""
     chat.chat.opened = False
-

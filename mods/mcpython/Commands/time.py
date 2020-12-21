@@ -1,6 +1,7 @@
 from . import Command
 import globals as G
 
+
 class time(Command.Command):
     @staticmethod
     def getHelp():
@@ -11,7 +12,7 @@ class time(Command.Command):
         return line.split(" ")[0] == "/time"
 
     @staticmethod
-    def getSyntaxError(line, entity, position, chat): #todo: add syntax-system
+    def getSyntaxError(line, entity, position, chat):  # todo: add syntax-system
         pass
 
     @staticmethod
@@ -27,5 +28,6 @@ class time(Command.Command):
             G.window.gametime += int(sc[2])
         elif sc[1] == "remove":
             G.window.gametime -= int(sc[2])
+
 
 Command.handler.register(time)

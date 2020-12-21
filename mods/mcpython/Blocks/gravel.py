@@ -2,6 +2,7 @@ from .Block import *
 from TickHandler import handler as tickhandler
 from .fallingblock import *
 
+
 @handler
 class Gravel(FallingBlock):
     def getTex(self):
@@ -16,7 +17,9 @@ class Gravel(FallingBlock):
         return 3
 
     def getDrop(self, item):
-        return self.getItemName() #TODO: add gravel 90% and flint 10%, fortune 1: 14%, 2: 25%, 3: 100%
+        return (
+            self.getItemName()
+        )  # TODO: add gravel 90% and flint 10%, fortune 1: 14%, 2: 25%, 3: 100%
 
     def getId(self):
         return 13
@@ -26,5 +29,3 @@ class Gravel(FallingBlock):
 
     def getHardness(self):
         return 0.6
-
-

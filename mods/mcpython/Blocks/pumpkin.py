@@ -10,4 +10,5 @@ class Pumpkin(Block):
 
     destroygroups = [destroyGroups.AXE]
 
+
 handler.register(Pumpkin)

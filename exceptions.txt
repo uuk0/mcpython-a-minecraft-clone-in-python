@@ -1525,3 +1525,117 @@ TypeError: list indices must be integers or slices, not str
 mods: ['moduls', 'mcpython']
 
 unknown key found: 65505:1
+
+[1608562683.7769864] argv=['C:/Python/mcpython1/__main__.py', 'C:\\Python\\mcpython1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "./mods/mcpython\mcpython.py", line 20, in <module>
+    from chat import *
+  File "./mods/mcpython\chat.py", line 2, in <module>
+    import Blocks
+  File "./mods/mcpython\Blocks\__init__.py", line 12, in <module>
+    locals()[name] = importlib.import_module("Blocks." + name)
+  File "C:\Python\core\3.9.0\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "./mods/mcpython\Blocks\chest.py", line 1, in <module>
+    import Inventorys
+  File "./mods/mcpython\Inventorys\__init__.py", line 1, in <module>
+    from . import Inventory
+  File "./mods/mcpython\Inventorys\Inventory.py", line 9, in <module>
+    import states
+  File "./mods/mcpython\states.py", line 11, in <module>
+    import WorldHandler
+  File "./mods/mcpython\WorldHandler.py", line 4, in <module>
+    import Dimension
+  File "./mods/mcpython\Dimension.py", line 12, in <module>
+    import pyfastnoisesimd
+ModuleNotFoundError: No module named 'pyfastnoisesimd'
+mods: ['moduls', 'mcpython']
+
+[1608562683.7789814] argv=['C:/Python/mcpython1/__main__.py', 'C:\\Python\\mcpython1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "./mods/mcpython\mcpython.py", line 140, in run
+    G.window.set_menu("minecraft:start_menü")
+AttributeError: 'NoneType' object has no attribute 'set_menu'
+mods: ['moduls', 'mcpython']
+
+[1608562824.9969664] argv=['C:/Python/mcpython1/__main__.py', 'C:\\Python\\mcpython1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "./mods/mcpython\crafting.py", line 256, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython']
+
+[1608562824.9996173] argv=['C:/Python/mcpython1/__main__.py', 'C:\\Python\\mcpython1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "./mods/mcpython\crafting.py", line 256, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython']
+
+[1608562824.9996173] argv=['C:/Python/mcpython1/__main__.py', 'C:\\Python\\mcpython1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "./mods/mcpython\crafting.py", line 256, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython']
+
+[1608562825.0085933] argv=['C:/Python/mcpython1/__main__.py', 'C:\\Python\\mcpython1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "./mods/mcpython\crafting.py", line 256, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython']
+
+[1608562825.0106027] argv=['C:/Python/mcpython1/__main__.py', 'C:\\Python\\mcpython1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "./mods/mcpython\crafting.py", line 256, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython']
+
+[1608562899.6811094] argv=['C:/Python/mcpython1/__main__.py', 'C:\\Python\\mcpython1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "./mods/mcpython\crafting.py", line 256, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython']
+
+[1608562899.6841016] argv=['C:/Python/mcpython1/__main__.py', 'C:\\Python\\mcpython1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "./mods/mcpython\crafting.py", line 256, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython']
+
+[1608562899.6841016] argv=['C:/Python/mcpython1/__main__.py', 'C:\\Python\\mcpython1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "./mods/mcpython\crafting.py", line 256, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython']
+
+[1608562899.6940782] argv=['C:/Python/mcpython1/__main__.py', 'C:\\Python\\mcpython1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "./mods/mcpython\crafting.py", line 256, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython']
+
+[1608562899.6951094] argv=['C:/Python/mcpython1/__main__.py', 'C:\\Python\\mcpython1'], platform=win32, mcpythonversion=18w38a, gameid=201808192000 
+traceback:
+Traceback (most recent call last):
+  File "./mods/mcpython\crafting.py", line 256, in loadRecipi
+    item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
+TypeError: list indices must be integers or slices, not str
+mods: ['moduls', 'mcpython']

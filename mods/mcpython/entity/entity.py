@@ -3,6 +3,7 @@ from EventHandler import eventhandler
 from mathhelper import *
 import texturGroups
 
+
 class EntityHandler:
     def __init__(self):
         self.entitys = {}
@@ -23,8 +24,8 @@ class EntityHandler:
             if name in self.entitys:
                 return self.entitys[name]
             for pre in self.prefixes:
-                if pre+":"+name in self.entitys:
-                    return self.entitys[pre+":"+name]
+                if pre + ":" + name in self.entitys:
+                    return self.entitys[pre + ":" + name]
             return None
         else:
             return name
@@ -38,42 +39,46 @@ class EntityHandler:
     def draw(self, *args):
         for e in self.todraw:
             drawable = e.getRanderAble()
-            if drawable != None and hasattr(drawable, "draw"): drawable.draw()
+            if drawable != None and hasattr(drawable, "draw"):
+                drawable.draw()
+
 
 entityhandler = EntityHandler()
 
-class Entity: #THIS IS THE SUMMONABLE COMPONENT CLASS
+
+class Entity:  # THIS IS THE SUMMONABLE COMPONENT CLASS
     def __init__(self, position, test=False):
         self.position = position
         self.on_creat()
-        if not test: entityhandler.registerInst(self)
+        if not test:
+            entityhandler.registerInst(self)
         self.lastpositions = []
         for e in self.getBoxModels():
             self.lastpositions.append(e.position)
 
-    def getRanderAble(self): #!
+    def getRanderAble(self):  #!
         return None
 
-    def setPosition(self, position): #!
+    def setPosition(self, position):  #!
         for i, e in enumerate(self.getBoxModels()):
             lpos = self.lastpositions[i]
             spos = e.position
-            dpos = (lpos[0]-spos[0], lpos[1]-spos[1], lpos[2]-spos[2])
+            dpos = (lpos[0] - spos[0], lpos[1] - spos[1], lpos[2] - spos[2])
             e.position[0] -= dpos[0]
             e.position[1] -= dpos[1]
             e.position[2] -= dpos[2]
         self.position = position
 
-    def setRotation(self): #!
+    def setRotation(self):  #!
         pass
 
-    def drawHitBox(self): #!
+    def drawHitBox(self):  #!
         pass
 
-    def hasHitBox(self): #!
+    def hasHitBox(self):  #!
         return False
 
-    def isHitting(self, *args): #!
+    def isHitting(self, *args):  #!
         pass
 
     def on_creat(self):

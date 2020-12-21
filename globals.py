@@ -1,4 +1,3 @@
-
 window = None
 model = None
 player = None

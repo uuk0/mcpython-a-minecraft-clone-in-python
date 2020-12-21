@@ -1,8 +1,9 @@
-#from Blocks import *
-#blockhandler = handler
+# from Blocks import *
+# blockhandler = handler
 import Blocks
-#from Item import *
-#itemhandler = handler
+
+# from Item import *
+# itemhandler = handler
 from oredictnames import *
 import Inventorys
 import json
@@ -11,6 +12,7 @@ import globals as G
 import Item.Item as Item
 import config
 import exceptionhandler
+
 
 class Grid:
     crafting_1x1 = "mcpython:interfaceses:crafting:1x1"
@@ -24,7 +26,8 @@ class Grid:
     crafting_1x3 = "mcpython:interfaceses:crafting:1x3"
     crafting_shapeless = "mcpython:interfaceses:crafting:shapeless"
     crafting_smelting = "mcpython:interfaceses:smelting:1to1"
-    crafting_brewing  = "mcpython:interfaceses:magic:brewing"
+    crafting_brewing = "mcpython:interfaceses:magic:brewing"
+
 
 class Recipi:
     def __init__(self, grid, input, output, inputamount, outputamount, *args, **kwargs):
@@ -37,6 +40,7 @@ class Recipi:
         self.kwargs = kwargs
 
         craftinghandler.register(self)
+
 
 class craftinghandler:
     def __init__(self):
@@ -59,27 +63,47 @@ class craftinghandler:
             print("[ERROR] during removing output: no recipi found")
             return
         if self.nrecipi.grid == Grid.crafting_1x1:
-            player.inventory.crafting.slots[self.nrecipislots[0]].amount -= self.nrecipi.inputamount[0]
+            player.inventory.crafting.slots[
+                self.nrecipislots[0]
+            ].amount -= self.nrecipi.inputamount[0]
         elif self.nrecipi.grid == Grid.crafting_2x2:
-            player.inventory.crafting.slots[self.nrecipislots[0]].amount -= self.nrecipi.inputamount[0]
-            player.inventory.crafting.slots[self.nrecipislots[1]].amount -= self.nrecipi.inputamount[1]
-            player.inventory.crafting.slots[self.nrecipislots[2]].amount -= self.nrecipi.inputamount[2]
-            player.inventory.crafting.slots[self.nrecipislots[3]].amount -= self.nrecipi.inputamount[3]
-        elif self.nrecipi.grid == Grid.crafting_1x2 or self.nrecipi.grid == Grid.crafting_2x1:
-            Inventorys.handler.inventoryslotsinst[self.nrecipislots[0]].amount -= self.nrecipi.inputamount[0]
-            Inventorys.handler.inventoryslotsinst[self.nrecipislots[1]].amount -= self.nrecipi.inputamount[1]
+            player.inventory.crafting.slots[
+                self.nrecipislots[0]
+            ].amount -= self.nrecipi.inputamount[0]
+            player.inventory.crafting.slots[
+                self.nrecipislots[1]
+            ].amount -= self.nrecipi.inputamount[1]
+            player.inventory.crafting.slots[
+                self.nrecipislots[2]
+            ].amount -= self.nrecipi.inputamount[2]
+            player.inventory.crafting.slots[
+                self.nrecipislots[3]
+            ].amount -= self.nrecipi.inputamount[3]
+        elif (
+            self.nrecipi.grid == Grid.crafting_1x2
+            or self.nrecipi.grid == Grid.crafting_2x1
+        ):
+            Inventorys.handler.inventoryslotsinst[
+                self.nrecipislots[0]
+            ].amount -= self.nrecipi.inputamount[0]
+            Inventorys.handler.inventoryslotsinst[
+                self.nrecipislots[1]
+            ].amount -= self.nrecipi.inputamount[1]
         else:
             for i, e in enumerate(self.nrecipislots):
                 e.amount -= self.nrecipi.inputamount[i]
 
-    
     def updateOutput_player(self, player):
         inv = player.inventory.crafting
         for c in self.recipis[Grid.crafting_1x1]:
             for i, s in enumerate(inv.slots[:4]):
-                if (s.item and s.item.getName() == c.input[0] and s.amount >= c.inputamount[0]) or (c.input[0] == None and not s.item):
+                if (
+                    s.item
+                    and s.item.getName() == c.input[0]
+                    and s.amount >= c.inputamount[0]
+                ) or (c.input[0] == None and not s.item):
                     flag = True
-                    for s1 in inv.slots[:i] + inv.slots[i+1:4]:
+                    for s1 in inv.slots[:i] + inv.slots[i + 1 : 4]:
                         if s1.item:
                             flag = False
                     if flag:
@@ -91,7 +115,11 @@ class craftinghandler:
         for c in self.recipis[Grid.crafting_2x2]:
             flag = True
             for i, s in enumerate(inv.slots[:4]):
-                if not (s.item and s.item.getName() == c.input[i] and s.amount >= c.inputamount[i]):
+                if not (
+                    s.item
+                    and s.item.getName() == c.input[i]
+                    and s.amount >= c.inputamount[i]
+                ):
                     if not s.item or not c.input[i] in s.item.getOreDictNames():
                         flag = False
             if flag:
@@ -104,7 +132,11 @@ class craftinghandler:
             for sl in [inv.slots[:2], inv.slots[2:]]:
                 flag = True
                 for i, s in sl:
-                    if not (s.item and s.item.getName() == c.input[i] and s.amount >= c.inputamount[i]):
+                    if not (
+                        s.item
+                        and s.item.getName() == c.input[i]
+                        and s.amount >= c.inputamount[i]
+                    ):
                         if not s.item or not c.input[i] in s.item.getOreDictNames():
                             flag = False
                 if flag:
@@ -119,7 +151,11 @@ class craftinghandler:
                 sl = sll[si]
                 flag = True
                 for i, s in enumerate(sl):
-                    if not (s.item and s.item.getName() == c.input[i] and s.amount >= c.inputamount[i]):
+                    if not (
+                        s.item
+                        and s.item.getName() == c.input[i]
+                        and s.amount >= c.inputamount[i]
+                    ):
                         if not s.item or not c.input[i] in s.item.getOreDictNames():
                             flag = False
                 if flag:
@@ -167,7 +203,9 @@ class craftinghandler:
         self.nrecipislots = []
         inv.slots[4].setItem(None)
 
+
 craftinghandler = craftinghandler()
+
 
 def loadRecipi(file):
     filename = file
@@ -177,7 +215,7 @@ def loadRecipi(file):
             data = json.load(file)
         t = data["type"]
         if t == "crafting_shapeless":
-            _items = data['ingredients']
+            _items = data["ingredients"]
             items = []
             itemamount = []
             for e in _items:
@@ -187,7 +225,11 @@ def loadRecipi(file):
                         print("[CRAFTING/LOADER] found oredict-notation", e["tag"])
                     itemamount.append(e["count"] if "count" in e else 1)
                     item = e["item"] if "item" in e else None
-                    if item and not item in Item.handler.nametoitem.keys() and not item in unknown_items:
+                    if (
+                        item
+                        and not item in Item.handler.nametoitem.keys()
+                        and not item in unknown_items
+                    ):
                         unknown_items.append(item)
                 except:
                     if config.CONFIGS["PRINT_CRAFTINGRECIPIS_DEBUG"]:
@@ -195,7 +237,7 @@ def loadRecipi(file):
                         raise
                     else:
                         exceptionhandler.addTraceback(False)
-            _result = data['result']
+            _result = data["result"]
             result = []
             resultamount = []
             for e in [_result]:
@@ -209,7 +251,7 @@ def loadRecipi(file):
             recipiamount = []
             keys = data["key"]
             _result = data["result"]
-            #print(pattern, keys, file)
+            # print(pattern, keys, file)
             for key in keys:
                 item = keys[key]["item"] if "item" in keys[key] else keys[key]["tag"]
                 amount = keys[key]["count"] if "count" in keys[key] else 1
@@ -217,7 +259,10 @@ def loadRecipi(file):
                     for i2 in range(len(pattern[0])):
                         if pattern[i1][i2] == key:
                             recipinames.append([item])
-                            if not item in Item.handler.nametoitem.keys() and not item in unknown_items:
+                            if (
+                                not item in Item.handler.nametoitem.keys()
+                                and not item in unknown_items
+                            ):
                                 unknown_items.append(item)
                             recipiamount.append([amount])
             result = []
@@ -227,25 +272,79 @@ def loadRecipi(file):
                 resultamount.append(e["count"] if "count" in e else 1)
             if len(pattern) == 1:
                 if len(pattern[0]) == 1:
-                    Recipi(Grid.crafting_1x1, recipinames, result, recipiamount, resultamount)
+                    Recipi(
+                        Grid.crafting_1x1,
+                        recipinames,
+                        result,
+                        recipiamount,
+                        resultamount,
+                    )
                 elif len(pattern[0]) == 2:
-                    Recipi(Grid.crafting_2x1, recipinames, result, recipiamount, resultamount)
+                    Recipi(
+                        Grid.crafting_2x1,
+                        recipinames,
+                        result,
+                        recipiamount,
+                        resultamount,
+                    )
                 elif len(pattern[0]) == 3:
-                    Recipi(Grid.crafting_3x1, recipinames, result, recipiamount, resultamount)
+                    Recipi(
+                        Grid.crafting_3x1,
+                        recipinames,
+                        result,
+                        recipiamount,
+                        resultamount,
+                    )
             elif len(pattern) == 2:
                 if len(pattern[0]) == 1:
-                    Recipi(Grid.crafting_1x2, recipinames, result, recipiamount, resultamount)
+                    Recipi(
+                        Grid.crafting_1x2,
+                        recipinames,
+                        result,
+                        recipiamount,
+                        resultamount,
+                    )
                 elif len(pattern[0]) == 2:
-                    Recipi(Grid.crafting_2x2, recipinames, result, recipiamount, resultamount)
+                    Recipi(
+                        Grid.crafting_2x2,
+                        recipinames,
+                        result,
+                        recipiamount,
+                        resultamount,
+                    )
                 elif len(pattern[0]) == 3:
-                    Recipi(Grid.crafting_3x2, recipinames, result, recipiamount, resultamount)
+                    Recipi(
+                        Grid.crafting_3x2,
+                        recipinames,
+                        result,
+                        recipiamount,
+                        resultamount,
+                    )
             elif len(pattern) == 3:
                 if len(pattern[0]) == 1:
-                    Recipi(Grid.crafting_1x3, recipinames, result, recipiamount, resultamount)
+                    Recipi(
+                        Grid.crafting_1x3,
+                        recipinames,
+                        result,
+                        recipiamount,
+                        resultamount,
+                    )
                 elif len(pattern[0]) == 2:
-                    Recipi(Grid.crafting_2x3, recipinames, result, recipiamount, resultamount)
+                    Recipi(
+                        Grid.crafting_2x3,
+                        recipinames,
+                        result,
+                        recipiamount,
+                        resultamount,
+                    )
                 elif len(pattern[0]) == 3:
-                    Recipi(Grid.crafting_3x3, recipinames, result, recipiamount, resultamount)
+                    Recipi(
+                        Grid.crafting_3x3,
+                        recipinames,
+                        result,
+                        recipiamount,
+                        resultamount,
+                    )
 
         elif config.CONFIGS["PRINT_CRAFTINGRECIPIS_DEBUG"]:
             print("unknow recipi type:", t)
@@ -254,11 +353,11 @@ def loadRecipi(file):
             print("can't load recipi", filename)
         exceptionhandler.addTraceback(False)
     if len(unknown_items) > 0 and config.CONFIGS["PRINT_CRAFTINGRECIPIS_DEBUG"]:
-        print("can't find the following items in registry that are used in these recipi:")
+        print(
+            "can't find the following items in registry that are used in these recipi:"
+        )
         print(unknown_items)
 
 
-for f in os.listdir(G.local+"/assets/recipes"):
-    loadRecipi(G.local+"/assets/recipes/"+f)
-
-
+for f in os.listdir(G.local + "/assets/recipes"):
+    loadRecipi(G.local + "/assets/recipes/" + f)

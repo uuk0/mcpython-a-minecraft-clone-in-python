@@ -19,4 +19,5 @@ class IronOre(Block):
     def getId(self):
         return 15
 
+
 handler.register(IronOre)

@@ -1,5 +1,6 @@
 from . import Command
 
+
 class replaceitem(Command.Command):
     @staticmethod
     def getHelp():
@@ -11,7 +12,7 @@ class replaceitem(Command.Command):
 
     @staticmethod
     def getSyntaxError(line, entity, position, chat):
-        #todo: add systax controlling
+        # todo: add systax controlling
         return None
 
     @staticmethod
@@ -25,5 +26,6 @@ class replaceitem(Command.Command):
                 if id == int(s[2]):
                     i.setItem(s[3], int(s[4]) if len(s) == 3 else 1)
                 id += 1
+
 
 Command.handler.register(replaceitem)

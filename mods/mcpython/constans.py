@@ -13,7 +13,7 @@ WALKING_SPEED = config.CONFIGS["WALKING_SPEED"]
 FLYING_SPEED = config.CONFIGS["FLYING_SPEED"]
 
 GRAVITY = config.CONFIGS["GRAVITY"]
-MAX_JUMP_HEIGHT = config.CONFIGS["MAX_JUMP_HEIGHT"] # About the height of a block.
+MAX_JUMP_HEIGHT = config.CONFIGS["MAX_JUMP_HEIGHT"]  # About the height of a block.
 # To derive the formula for calculating jump speed, first solve
 #    v_t = v_0 + a * t
 # for the time at which you achieve maximum height, where a is the acceleration
@@ -26,4 +26,13 @@ TERMINAL_VELOCITY = 50
 
 PLAYER_HEIGHT = config.CONFIGS["PLAYER_HEIGHT"]
 
-FACES = [(1, 1, 1), (-1, 1, 1), (1, -1, 1), (-1, -1, 1), (1, 1, -1), (-1, 1, -1), (1, -1, -1), (-1, -1, -1)]
+FACES = [
+    (1, 1, 1),
+    (-1, 1, 1),
+    (1, -1, 1),
+    (-1, -1, 1),
+    (1, 1, -1),
+    (-1, 1, -1),
+    (1, -1, -1),
+    (-1, -1, -1),
+]

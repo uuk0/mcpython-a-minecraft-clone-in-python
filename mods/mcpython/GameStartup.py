@@ -2,6 +2,7 @@ from moduls import *
 import initgame
 import chat
 
+
 def start(window, creat=True):
     window.state = "StartMenü"
     window.model.world = {}

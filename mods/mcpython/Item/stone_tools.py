@@ -2,6 +2,7 @@ from .Item import *
 from destroyGroup import *
 from oredictnames import OreDict
 
+
 class StoneShovel(Item):
     def getName(self):
         return "minecraft:stone_shovel"
@@ -29,7 +30,9 @@ class StoneShovel(Item):
     def getToolMaterial(self):
         return "minecraft:stone"
 
+
 handler.register(StoneShovel)
+
 
 class StonePickAxe(Item):
     def getTexturFile(self):
@@ -58,7 +61,9 @@ class StonePickAxe(Item):
     def getToolMaterial(self):
         return "minecraft:stone"
 
+
 handler.register(StonePickAxe)
+
 
 class StoneAxe(Item):
     def getTexturFile(self):
@@ -87,7 +92,9 @@ class StoneAxe(Item):
     def getToolMaterial(self):
         return "minecraft:stone"
 
+
 handler.register(StoneAxe)
+
 
 class StoneSword(Item):
     def getTexturFile(self):
@@ -114,7 +121,9 @@ class StoneSword(Item):
     def getToolMaterial(self):
         return "minecraft:stone"
 
+
 handler.register(StoneSword)
+
 
 class StoneHoe(Item):
     def getTexturFile(self):

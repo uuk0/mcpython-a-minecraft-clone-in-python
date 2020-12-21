@@ -3,8 +3,9 @@ from moduls import *
 from constans import *
 from config import CONFIGS
 
+
 def initgame(window, creat=True):
-    #configurate opengl
+    # configurate opengl
     glClearColor(0.5, 0.69, 1.0, 1)
     glEnable(GL_CULL_FACE)
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST)
@@ -20,6 +21,5 @@ def initgame(window, creat=True):
         y = 0
         while (0, y, 0) in window.model.world:
             y += 1
-        window.position = window.startpos = (0, y+1, 0)
+        window.position = window.startpos = (0, y + 1, 0)
         print("[INFO] finsih!")
-    

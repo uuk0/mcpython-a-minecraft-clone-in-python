@@ -8,4 +8,5 @@ class Dirt(Item):
     def getTexturFile(self):
         return "./assets/textures/items/dirt.png"
 
+
 handler.register(Dirt)

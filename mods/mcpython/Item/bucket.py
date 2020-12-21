@@ -1,5 +1,6 @@
 from .Item import *
 
+
 class Bucket(Item):
     def getName(self):
         return "minecraft:bucket"
@@ -22,7 +23,9 @@ class Bucket(Item):
     def hasBlock(self):
         return False
 
+
 handler.register(Bucket)
+
 
 class WaterBucket(Item):
     def getName(self):
@@ -43,9 +46,11 @@ class WaterBucket(Item):
     def getBlockName(self):
         return "minecraft:water"
 
+
 handler.register(WaterBucket)
 
 liquidhandler.register(WaterBucket, "minecraft:water")
+
 
 class LavaBucket(Item):
     def getName(self):
@@ -66,8 +71,7 @@ class LavaBucket(Item):
     def getBlockName(self):
         return "minecraft:lava"
 
+
 handler.register(LavaBucket)
 
 liquidhandler.register(LavaBucket, "minecraft:lava")
-
-

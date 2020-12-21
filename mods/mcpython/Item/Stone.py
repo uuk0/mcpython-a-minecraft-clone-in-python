@@ -1,5 +1,6 @@
 from .Item import *
 
+
 class Stone(Item):
     def getName(self):
         return "minecraft:stone"
@@ -7,7 +8,9 @@ class Stone(Item):
     def getTexturFile(self):
         return "./assets/textures/items/stone.png"
 
+
 handler.register(Stone)
+
 
 class Diorit(Item):
     def getName(self):
@@ -16,7 +19,9 @@ class Diorit(Item):
     def getTexturFile(self):
         return "./assets/textures/items/diorite.png"
 
+
 handler.register(Diorit)
+
 
 class PolishedDiorit(Item):
     def getName(self):
@@ -24,5 +29,6 @@ class PolishedDiorit(Item):
 
     def getTexturFile(self):
         return "./assets/textures/items/polished_diorit.png"
+
 
 handler.register(PolishedDiorit)

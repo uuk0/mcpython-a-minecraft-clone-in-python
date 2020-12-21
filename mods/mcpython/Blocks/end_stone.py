@@ -2,6 +2,7 @@ from .Block import *
 from oredictnames import OreDict
 from destroyGroup import *
 
+
 class Endstone(Block):
     def getTex(self):
         return tex_coords((12, 12), (12, 12), (12, 12))
@@ -22,6 +23,7 @@ class Endstone(Block):
 
 
 handler.register(Endstone)
+
 
 class Endbrick(Block):
     def getTex(self):

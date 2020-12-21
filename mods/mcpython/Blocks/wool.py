@@ -1,6 +1,7 @@
 from .Block import *
 
 for i in range(0, 16):
+
     class Wool(Block):
         id = 0
 
@@ -8,7 +9,7 @@ for i in range(0, 16):
             return tex_coords((15, self.id), (15, self.id), (15, self.id))
 
         def getName(self):
-            return "minecraft:wool_"+str(15-self.id)
+            return "minecraft:wool_" + str(15 - self.id)
 
         destroygroups = [destroyGroups.SHEER]
 

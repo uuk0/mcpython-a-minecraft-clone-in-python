@@ -2,6 +2,7 @@ from .Item import *
 from destroyGroup import *
 from oredictnames import OreDict
 
+
 class diamondShovel(Item):
     def getName(self):
         return "minecraft:diamond_shovel"
@@ -29,7 +30,9 @@ class diamondShovel(Item):
     def getToolMaterial(self):
         return "minecraft:diamond"
 
+
 handler.register(diamondShovel)
+
 
 class diamondPickAxe(Item):
     def getTexturFile(self):
@@ -58,7 +61,9 @@ class diamondPickAxe(Item):
     def getToolMaterial(self):
         return "minecraft:diamond"
 
+
 handler.register(diamondPickAxe)
+
 
 class diamondAxe(Item):
     def getTexturFile(self):
@@ -87,7 +92,9 @@ class diamondAxe(Item):
     def getToolMaterial(self):
         return "minecraft:diamond"
 
+
 handler.register(diamondAxe)
+
 
 class diamondSword(Item):
     def getTexturFile(self):
@@ -114,7 +121,9 @@ class diamondSword(Item):
     def getToolMaterial(self):
         return "minecraft:diamond"
 
+
 handler.register(diamondSword)
+
 
 class diamondHoe(Item):
     def getTexturFile(self):

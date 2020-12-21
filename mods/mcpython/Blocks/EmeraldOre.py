@@ -1,6 +1,7 @@
 from .Block import *
 import globals as G
 
+
 class EmeraldOre(Block):
     def getTex(self):
         return tex_coords((8, 5), (8, 5), (8, 5))
@@ -12,7 +13,10 @@ class EmeraldOre(Block):
     dropamounts = [1]
 
     def isBreakAbleWithItem(self, item):
-        if item and (item.getName() == "minecraft:iron_pick_axe" or item.getName() == "minecraft:diamond_pick_axe"):
+        if item and (
+            item.getName() == "minecraft:iron_pick_axe"
+            or item.getName() == "minecraft:diamond_pick_axe"
+        ):
             return True
         if G.player.gamemode == 1:
             return True
@@ -28,5 +32,6 @@ class EmeraldOre(Block):
 
     def getId(self):
         return 129
+
 
 handler.register(EmeraldOre)

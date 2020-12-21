@@ -1,5 +1,6 @@
 from .Item import *
 
+
 class Quartz(Item):
     def getName(self):
         return "minecraft:quartz"
@@ -9,5 +10,6 @@ class Quartz(Item):
 
     def hasBlock(self):
         return False
+
 
 handler.register(Quartz)

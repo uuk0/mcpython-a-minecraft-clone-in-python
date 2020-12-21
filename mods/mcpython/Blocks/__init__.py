@@ -1,12 +1,15 @@
 import os
 import importlib
 import globals as G
+
 print(G.local)
-for f in os.listdir(G.local+"/mods/mcpython/Blocks"):
-    if os.path.isfile(G.local+"/mods/mcpython/Blocks/"+f) and not f in ["__init__.py"]:
+for f in os.listdir(G.local + "/mods/mcpython/Blocks"):
+    if os.path.isfile(G.local + "/mods/mcpython/Blocks/" + f) and not f in [
+        "__init__.py"
+    ]:
         print("[FILELOADER/INFO] loading file", f)
         name = f.split(".")[0]
-        locals()[name] = importlib.import_module("Blocks."+name)
+        locals()[name] = importlib.import_module("Blocks." + name)
 
 """
 missing:
@@ -98,5 +101,5 @@ mushroom
 banner
 ... 
 """
-#TODO add these blocks
-#TODO add emeralds to emerald ore
+# TODO add these blocks
+# TODO add emeralds to emerald ore

@@ -1,8 +1,9 @@
 from .Block import *
 
+
 class Plank(Block):
     def getBlastResistence(self):
-        #todo add constant
+        # todo add constant
         return -1
 
     def getHardness(self):
@@ -10,6 +11,7 @@ class Plank(Block):
 
     def getId(self):
         return 5
+
 
 class wood_plank_0(Plank):
     def getName(self):
@@ -21,7 +23,9 @@ class wood_plank_0(Plank):
     def getDestroyGroups(self):
         return [destroyGroups.AXE]
 
+
 handler.register(wood_plank_0)
+
 
 class wood_plank_1(Plank):
     def getName(self):
@@ -33,7 +37,9 @@ class wood_plank_1(Plank):
     def getDestroyGroups(self):
         return [destroyGroups.AXE]
 
+
 handler.register(wood_plank_1)
+
 
 class wood_plank_2(Plank):
     def getName(self):
@@ -45,7 +51,9 @@ class wood_plank_2(Plank):
     def getDestroyGroups(self):
         return [destroyGroups.AXE]
 
+
 handler.register(wood_plank_2)
+
 
 class wood_plank_3(Plank):
     def getName(self):
@@ -56,5 +64,6 @@ class wood_plank_3(Plank):
 
     def getDestroyGroups(self):
         return [destroyGroups.AXE]
+
 
 handler.register(wood_plank_3)

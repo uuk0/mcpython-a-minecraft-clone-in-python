@@ -1,5 +1,6 @@
 from .Block import *
 
+
 class StoneBrick(Block):
     def getTex(self):
         return tex_coords((0, 3), (0, 3), (0, 3))
@@ -17,5 +18,6 @@ class StoneBrick(Block):
 
     def getId(self):
         return 98
+
 
 handler.register(StoneBrick)

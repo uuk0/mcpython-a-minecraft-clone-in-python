@@ -2,13 +2,19 @@ import threading
 from time import *
 import globals as G
 
+
 class TickHandler:
     def __init__(self):
         self.ticks = [[]] * 100
         self.nextupdate = time() + 1
 
     def _run(self, dt):
-        if G.player and G.window and (G.window.keyEvent == "esc_menü" or G.window.keyEvent == "start_menü"): return
+        if (
+            G.player
+            and G.window
+            and (G.window.keyEvent == "esc_menü" or G.window.keyEvent == "start_menü")
+        ):
+            return
         self.nextupdate += 1
         data = self.ticks.pop(0)
         self.ticks.append([])

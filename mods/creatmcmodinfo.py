@@ -8,7 +8,12 @@ mainfile = input("main file? ")
 
 
 with open(file, mode="wb") as f:
-    pickle.dump({"name":name,
-                 "MCPYTHON_VERSION":mcversion,
-                 "MODLOADER_VERSION":mlversion,
-                 "MAIN_FILE":mainfile}, f)
+    pickle.dump(
+        {
+            "name": name,
+            "MCPYTHON_VERSION": mcversion,
+            "MODLOADER_VERSION": mlversion,
+            "MAIN_FILE": mainfile,
+        },
+        f,
+    )

@@ -1,5 +1,6 @@
 from .Block import *
 
+
 @handler
 class Bedrock(Block):
     def getTex(self):

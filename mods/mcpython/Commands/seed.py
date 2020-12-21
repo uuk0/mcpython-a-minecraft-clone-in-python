@@ -1,6 +1,7 @@
 from . import Command
 import globals as G
 
+
 class seed(Command.Command):
     @staticmethod
     def isCommand(line):
@@ -9,10 +10,11 @@ class seed(Command.Command):
     @staticmethod
     def parse(line, entity, position, chat):
         print("parsing")
-        chat.println("seed: "+str(G.seed))
+        chat.println("seed: " + str(G.seed))
 
     @staticmethod
     def getHelp():
         return "/seed: returns the seed of the world"
+
 
 Command.handler.register(seed)

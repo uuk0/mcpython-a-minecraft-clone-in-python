@@ -20,7 +20,9 @@ class purpur_block(Block):
     def getId(self):
         return 201
 
+
 handler.register(purpur_block)
+
 
 class purpur_pillar(WoodLog):
     def getName(self):
@@ -45,5 +47,6 @@ class purpur_pillar(WoodLog):
 
     def getId(self):
         return 201
+
 
 handler.register(purpur_pillar)

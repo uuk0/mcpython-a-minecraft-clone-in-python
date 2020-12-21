@@ -1,6 +1,7 @@
 import time
 import math
 
+
 class Random(object):
     """
     An implementation of the Java SE 6 random number generator.
@@ -16,7 +17,7 @@ class Random(object):
     synchronize all accesses to this class per-instance.
     """
 
-    def __init__(self, seed = None):
+    def __init__(self, seed=None):
         """
         Create a new random number generator.
         """
@@ -40,7 +41,7 @@ class Random(object):
 
     @seed.setter
     def seed(self, seed):
-        self._seed = (seed ^ 403438462673 & ((1 << 48) - 1))
+        self._seed = seed ^ 403438462673 & ((1 << 48) - 1)
 
     def next(self, bits):
         """
@@ -62,7 +63,7 @@ class Random(object):
         # Python and Java don't really agree on how ints work. This converts
         # the unsigned generated int into a signed int if necessary.
         if retval & (1 << 31):
-            retval -= (1 << 32)
+            retval -= 1 << 32
 
         return retval
 
@@ -74,14 +75,14 @@ class Random(object):
         for i in range(0, len(l)):
             if not i % 4:
                 n = self.nextInt()
-            b = n & 0xff
+            b = n & 0xFF
             # Flip signs. Ugh.
             if b & 0x80:
                 b -= 0x100
             l[i] = b
             n >>= 8
 
-    def nextInt(self, n = None):
+    def nextInt(self, n=None):
         """
         Return a random int in [0, `n`).
 

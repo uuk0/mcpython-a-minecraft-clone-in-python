@@ -1,6 +1,7 @@
 from .Item import *
 from oredictnames import *
 
+
 class wood_plank_0(Item):
     def getName(self):
         return "minecraft:wood_plank_0"
@@ -14,7 +15,9 @@ class wood_plank_0(Item):
     def getFuelAmount(self):
         return 20
 
+
 handler.register(wood_plank_0)
+
 
 class wood_plank_1(Item):
     def getName(self):
@@ -29,7 +32,9 @@ class wood_plank_1(Item):
     def getFuelAmount(self):
         return 20
 
+
 handler.register(wood_plank_1)
+
 
 class wood_plank_2(Item):
     def getName(self):
@@ -44,7 +49,9 @@ class wood_plank_2(Item):
     def getFuelAmount(self):
         return 20
 
+
 handler.register(wood_plank_2)
+
 
 class wood_plank_3(Item):
     def getName(self):
@@ -58,5 +65,6 @@ class wood_plank_3(Item):
 
     def getFuelAmount(self):
         return 20
+
 
 handler.register(wood_plank_3)

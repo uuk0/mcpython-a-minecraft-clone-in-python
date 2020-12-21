@@ -9,14 +9,17 @@ class furnes(Inventory):
         return 5
 
     def getSlots(self):
-        s =    [Slot(310, 315), Slot(310, 230),
-                Slot(0, 0, mode="o", stid="minecraft:slot:furnes:out")]
+        s = [
+            Slot(310, 315),
+            Slot(310, 230),
+            Slot(0, 0, mode="o", stid="minecraft:slot:furnes:out"),
+        ]
         return s
 
     def getImage(self):
         for e in self.slots:
             print(e, e.id)
-        return './assets/textures/gui/furnace.png'
+        return "./assets/textures/gui/furnace.png"
 
     def getDepedens(self):
         return [0, 1]
@@ -30,7 +33,6 @@ class furnes(Inventory):
     def on_show(self):
         for i in self.getInventoryDependence():
             G.inventoryhandler.show(i)
-
 
 
 handler.register(furnes)

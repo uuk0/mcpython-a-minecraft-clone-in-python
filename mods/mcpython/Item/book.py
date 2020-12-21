@@ -1,5 +1,6 @@
 from .Item import *
 
+
 class Book(Item):
     def getName(self):
         return "minecraft:book"
@@ -9,5 +10,6 @@ class Book(Item):
 
     def hasBlock(self):
         return False
+
 
 handler.register(Book)

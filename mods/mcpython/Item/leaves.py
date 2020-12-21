@@ -1,5 +1,6 @@
 from .Item import *
 
+
 class leave_0(Item):
     def getName(self):
         return "minecraft:leave_0"
@@ -9,5 +10,6 @@ class leave_0(Item):
 
     def getFuelAmount(self):
         return 10
+
 
 handler.register(leave_0)

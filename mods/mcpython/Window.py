@@ -30,7 +30,6 @@ from constans import FACES
 
 
 class Window(pyglet.window.Window):
-
     def __init__(self, *args, **kwargs):
         self.WorldName = ""
         super(Window, self).__init__(*args, **kwargs)
@@ -76,15 +75,22 @@ class Window(pyglet.window.Window):
         # self.block = self.inventory[0]
 
         # Convenience list of num keys.
-        self.num_keys = config.CONFIGS["init"]["KEYBINDS"]['inventoryslots:keys']
-        self.num_keys = config.CONFIGS["init"]["KEYBINDS"]['inventoryslots:keys']
+        self.num_keys = config.CONFIGS["init"]["KEYBINDS"]["inventoryslots:keys"]
+        self.num_keys = config.CONFIGS["init"]["KEYBINDS"]["inventoryslots:keys"]
 
         # Instance of the model that handles the world.
         self.model = Model(self)
 
-        self.chatlabel = pyglet.text.Label('', font_name='Arial', font_size=18,
-                                           x=30, y=50, anchor_x='left', anchor_y='top',
-                                           color=(0, 0, 0, 255))
+        self.chatlabel = pyglet.text.Label(
+            "",
+            font_name="Arial",
+            font_size=18,
+            x=30,
+            y=50,
+            anchor_x="left",
+            anchor_y="top",
+            color=(0, 0, 0, 255),
+        )
 
         self.player = player(self)
         player.playerinst = self.player
@@ -109,7 +115,9 @@ class Window(pyglet.window.Window):
         # TICKS_PER_SEC. This is the main game event loop.
         pyglet.clock.schedule_interval(self.update, 1.0 / TICKS_PER_SEC)
         pyglet.clock.schedule_interval(tickhandler._run, 0.5)
-        pyglet.clock.schedule_interval(EventHandler.eventhandler.update, 1.0 / TICKS_PER_SEC)
+        pyglet.clock.schedule_interval(
+            EventHandler.eventhandler.update, 1.0 / TICKS_PER_SEC
+        )
 
         self.keyEvent = None
         self.last_generate = 1000
@@ -138,7 +146,7 @@ class Window(pyglet.window.Window):
         return
 
     def set_exclusive_mouse(self, exclusive):
-        """ If `exclusive` is True, the game will capture the mouse, if False
+        """If `exclusive` is True, the game will capture the mouse, if False
         the game will ignore the mouse.
 
         """
@@ -146,7 +154,7 @@ class Window(pyglet.window.Window):
         self.exclusive = exclusive
 
     def get_sight_vector(self):
-        """ Returns the current line of sight vector indicating the direction
+        """Returns the current line of sight vector indicating the direction
         the player is looking.
 
         """
@@ -163,7 +171,7 @@ class Window(pyglet.window.Window):
         return (dx, dy, dz)
 
     def get_motion_vector(self):
-        """ Returns the current motion vector indicating the velocity of the
+        """Returns the current motion vector indicating the velocity of the
         player.
 
         Returns
@@ -202,7 +210,7 @@ class Window(pyglet.window.Window):
         return (dx, dy, dz)
 
     def update(self, dt):
-        """ This method is scheduled to be called repeatedly by the pyglet
+        """This method is scheduled to be called repeatedly by the pyglet
         clock.
 
         Parameters
@@ -216,13 +224,25 @@ class Window(pyglet.window.Window):
             if self.gametime > 2000:
                 self.gametime -= 2000
             if self.gametime <= 1000:
-                glClearColor((2000 - self.gametime) / 2000 * 0.5, (2000 - self.gametime) / 2000 * 0.69,
-                             (2000 - self.gametime) / 2000, (2000 - self.gametime) / 2000)
+                glClearColor(
+                    (2000 - self.gametime) / 2000 * 0.5,
+                    (2000 - self.gametime) / 2000 * 0.69,
+                    (2000 - self.gametime) / 2000,
+                    (2000 - self.gametime) / 2000,
+                )
             else:
-                glClearColor(self.gametime / 2000 * 0.5, self.gametime / 2000 * 0.69, self.gametime / 2000,
-                             self.gametime / 2000)
+                glClearColor(
+                    self.gametime / 2000 * 0.5,
+                    self.gametime / 2000 * 0.69,
+                    self.gametime / 2000,
+                    self.gametime / 2000,
+                )
         if dt > 10:
-            print("[ERROR] update-zyklus do need more time then normal (" + str(dt) + " secounds)")
+            print(
+                "[ERROR] update-zyklus do need more time then normal ("
+                + str(dt)
+                + " secounds)"
+            )
         self.model.process_queue()
         sector = sectorize(self.position)
         if sector != self.sector:
@@ -249,7 +269,7 @@ class Window(pyglet.window.Window):
             self.kill("killed")
         WorldSaver.savePlayerData(self.worldname, self)
 
-        op = self.position;
+        op = self.position
         ora = self.rotation
         self.player.update()
         eventhandler.call("on_player_move", self.position, self.rotation, instant=True)
@@ -272,29 +292,38 @@ class Window(pyglet.window.Window):
                 if block:
                     b = self.model.world[block]
                     self.model.remove_block(b.pos)
-                    if self.player.inventory.hotbar.slots[self.hotbarelement].item: self.player.inventory.hotbar.slots[
-                        self.hotbarelement].item.on_destroy_with(b)
+                    if self.player.inventory.hotbar.slots[self.hotbarelement].item:
+                        self.player.inventory.hotbar.slots[
+                            self.hotbarelement
+                        ].item.on_destroy_with(b)
                 self.braking_start = time.time()
                 return
             d = time.time() - self.braking_start
             vector = self.get_sight_vector()
             block, previous = self.model.hit_test(self.position, vector)
             i = self.player.inventory.hotbar.slots[self.hotbarelement].item
-            if not block: return
+            if not block:
+                return
             b = self.model.world[block]
             id = i.getDestroyMultiplierWithTool(b) if i else 1
-            if d / id > b.getHardness() / 5 and b.isBreakAbleWithItem(i) and b.isBreakAble():
+            if (
+                d / id > b.getHardness() / 5
+                and b.isBreakAbleWithItem(i)
+                and b.isBreakAble()
+            ):
                 if b.getDrop(i) != None:
                     self.player.addToFreePlace(b.getDrop(i), b.getDropAmount(i))
                 self.model.remove_block(b.pos)
                 self.braking_start = time.time()
-                if self.player.inventory.hotbar.slots[self.hotbarelement].item: self.player.inventory.hotbar.slots[
-                    self.hotbarelement].item.on_destroy_with(b)
+                if self.player.inventory.hotbar.slots[self.hotbarelement].item:
+                    self.player.inventory.hotbar.slots[
+                        self.hotbarelement
+                    ].item.on_destroy_with(b)
             elif not b.isBreakAbleWithItem(i) or not b.isBreakAble():
                 self.braking_start = time.time()
 
     def _update(self, dt):
-        """ Private implementation of the `update()` method. This is where most
+        """Private implementation of the `update()` method. This is where most
         of the motion logic lives, along with gravity and collision detection.
 
         Parameters
@@ -304,11 +333,18 @@ class Window(pyglet.window.Window):
 
         """
         if self.turning_strafe[0] and config.CONFIGS["ALLOW_CAMERA_MOVING_WITH_ARROWS"]:
-            self.rotation = (self.rotation[0] + self.turning_strafe[0] / 4, self.rotation[1])
+            self.rotation = (
+                self.rotation[0] + self.turning_strafe[0] / 4,
+                self.rotation[1],
+            )
         if self.turning_strafe[1] and config.CONFIGS["ALLOW_CAMERA_MOVING_WITH_ARROWS"]:
             if (-90 < self.rotation[1] and self.turning_strafe[1] == -1) or (
-                    90 > self.rotation[1] and self.turning_strafe[1] == 1):
-                self.rotation = (self.rotation[0], self.rotation[1] + self.turning_strafe[1] / 4)
+                90 > self.rotation[1] and self.turning_strafe[1] == 1
+            ):
+                self.rotation = (
+                    self.rotation[0],
+                    self.rotation[1] + self.turning_strafe[1] / 4,
+                )
             else:
                 self.turning_strafe[1] = None
         # walking
@@ -338,7 +374,7 @@ class Window(pyglet.window.Window):
         self.position = (x, y, z)
 
     def collide(self, position, height):
-        """ Checks to see if the player at the given `position` and `height`
+        """Checks to see if the player at the given `position` and `height`
         is colliding with any blocks in the world.
 
         Parameters
@@ -371,27 +407,35 @@ class Window(pyglet.window.Window):
                 if d < pad:
                     (x, y, z) = self.position
                     (dx, dy, dz) = face
-                    if (x + dx, y + dy, z + dz) in self.model.world: self.player.harts -= self.model.world[
-                        (x + dx, y + dy, z + dz)].getPlayerDamage()
+                    if (x + dx, y + dy, z + dz) in self.model.world:
+                        self.player.harts -= self.model.world[
+                            (x + dx, y + dy, z + dz)
+                        ].getPlayerDamage()
                     continue
                 for dy in xrange(height):  # check each height
                     op = list(np)
                     op[1] -= dy
                     op[i] += face[i]
-                    if tuple(op) not in self.model.world or not self.model.world[tuple(op)].hasHitbox(None):
+                    if tuple(op) not in self.model.world or not self.model.world[
+                        tuple(op)
+                    ].hasHitbox(None):
                         continue
                     p[i] -= (d - pad) * face[i]
                     if face == (0, -1, 0) or face == (0, 1, 0):
                         # You are colliding with the ground or ceiling, so stop
                         # falling / rising.
                         self.dy = 0
-                        if self.player.gamemode != 1 and self.player.falling and self.player.fallhigh > 1.8:
+                        if (
+                            self.player.gamemode != 1
+                            and self.player.falling
+                            and self.player.fallhigh > 1.8
+                        ):
                             self.player.harts -= round((self.player.fallhigh - 2) / 3)
                     break
         return tuple(p)
 
     def on_mouse_press(self, x, y, button, modifiers):
-        """ Called when a mouse button is pressed. See pyglet docs for button
+        """Called when a mouse button is pressed. See pyglet docs for button
         amd modifier mappings.
 
         Parameters
@@ -408,13 +452,15 @@ class Window(pyglet.window.Window):
             mouse button was clicked.
 
         """
-        EventHandler.eventhandler.call("on_mouse_press", x, y, button, modifiers, instant=True)
+        EventHandler.eventhandler.call(
+            "on_mouse_press", x, y, button, modifiers, instant=True
+        )
 
     def on_mouse_release(self, x, y, button, modifiers):
         self.braking_start = None
 
     def on_mouse_motion(self, x, y, dx, dy):
-        """ Called when the player moves the mouse.
+        """Called when the player moves the mouse.
 
         Parameters
         ----------
@@ -428,7 +474,7 @@ class Window(pyglet.window.Window):
         EventHandler.eventhandler.call("on_mouse_motion", x, y, dx, dy, instant=True)
 
     def on_key_press(self, symbol, modifiers):
-        """ Called when the player presses a key. See pyglet docs for key
+        """Called when the player presses a key. See pyglet docs for key
         mappings.
 
         Parameters
@@ -442,7 +488,7 @@ class Window(pyglet.window.Window):
         EventHandler.eventhandler.call("on_key_press", symbol, modifiers, instant=True)
 
     def on_key_release(self, symbol, modifiers):
-        """ Called when the player releases a key. See pyglet docs for key
+        """Called when the player releases a key. See pyglet docs for key
         mappings.
 
         Parameters
@@ -453,12 +499,12 @@ class Window(pyglet.window.Window):
             Number representing any modifying keys that were pressed.
 
         """
-        EventHandler.eventhandler.call("on_key_release", symbol, modifiers, instant=True)
+        EventHandler.eventhandler.call(
+            "on_key_release", symbol, modifiers, instant=True
+        )
 
     def on_resize(self, width, height):
-        """ Called when the window is resized to a new `width` and `height`.
-
-        """
+        """Called when the window is resized to a new `width` and `height`."""
         ls = self.lastsize
         dx = ls[0] - width
         dy = ls[1] - height
@@ -466,9 +512,7 @@ class Window(pyglet.window.Window):
         EventHandler.eventhandler.call("on_resize", dx, dy, width, height)
 
     def set_2d(self):
-        """ Configure OpenGL to draw in 2d.
-
-        """
+        """Configure OpenGL to draw in 2d."""
         width, height = self.get_size()
         glDisable(GL_DEPTH_TEST)
         glViewport(0, 0, width, height)
@@ -479,9 +523,7 @@ class Window(pyglet.window.Window):
         glLoadIdentity()
 
     def set_3d(self):
-        """ Configure OpenGL to draw in 3d.
-
-        """
+        """Configure OpenGL to draw in 3d."""
         width, height = self.get_size()
         glEnable(GL_DEPTH_TEST)
         glViewport(0, 0, width, height)
@@ -510,9 +552,7 @@ class Window(pyglet.window.Window):
             self.close()
 
     def on_draw(self):
-        """ Called by pyglet to draw the canvas.
-
-        """
+        """Called by pyglet to draw the canvas."""
         self.clear()
         self.set_3d()
         glColor3d(1, 1, 1)
@@ -521,9 +561,7 @@ class Window(pyglet.window.Window):
         EventHandler.eventhandler.call("on_draw_2D", self, instant=True)
 
     def draw_reticle(self):
-        """ Draw the crosshairs in the center of the screen.
-
-        """
+        """Draw the crosshairs in the center of the screen."""
 
     def kill(self, msg):
         y = 4
@@ -545,4 +583,5 @@ class Window(pyglet.window.Window):
                 while self.hotbarelement + scroll_x > 8:
                     scroll_x -= 9
             self.hotbarelement += scroll_x
-        if self.braking_start: self.braking_start = time.time()
+        if self.braking_start:
+            self.braking_start = time.time()

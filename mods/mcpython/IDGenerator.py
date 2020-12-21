@@ -1,8 +1,9 @@
 import random
 
 
-#These class is part of the autobahn.util libary published under MIT-licence
-#modified by me
+# These class is part of the autobahn.util libary published under MIT-licence
+# modified by me
+
 
 class IdGenerator(object):
     def __init__(self):
@@ -47,5 +48,6 @@ class IdGenerator(object):
         self.dimensionids[1] += 1
         self.dimensionids[0].append(id)
         return id
+
 
 handler = IdGenerator()

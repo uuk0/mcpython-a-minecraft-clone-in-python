@@ -1,7 +1,8 @@
-#todo: delet
+# todo: delet
 from . import Command
 import WorldSaver
 import globals as G
+
 
 class load(Command.Command):
     @staticmethod
@@ -15,6 +16,7 @@ class load(Command.Command):
     @staticmethod
     def getSyntaxError(line, entity, position, chat):
         pass
+
     # todo: add syntax-system
 
     @staticmethod
@@ -24,5 +26,6 @@ class load(Command.Command):
         name = s[1]
         WorldSaver.loadWorld(G.window.model, name)
         G.window.worldname = name
+
 
 Command.handler.register(load)

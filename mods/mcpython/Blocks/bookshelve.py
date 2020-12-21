@@ -1,6 +1,7 @@
 from .Block import *
 import random
 
+
 class Bookshelve(Block):
     def getTex(self):
         return tex_coords((1, 7), (1, 7), (4, 7))
@@ -23,5 +24,6 @@ class Bookshelve(Block):
 
     def getId(self):
         return 47
+
 
 handler.register(Bookshelve)

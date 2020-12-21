@@ -2,15 +2,21 @@ from .Block import *
 
 from oredictnames import OreDict
 
-class TexturError(Exception): pass
 
-SIDES = {"N":"mcpython:side:N",
-         "O":"mcpython:side:O",
-         "S":"mcpython:side:S",
-         "W":"mcpython:side:W",
-         "U":"mcpython:side:U",
-         "D":"mcpython:side:D",
-         "A":"mcpython:side:A"}
+class TexturError(Exception):
+    pass
+
+
+SIDES = {
+    "N": "mcpython:side:N",
+    "O": "mcpython:side:O",
+    "S": "mcpython:side:S",
+    "W": "mcpython:side:W",
+    "U": "mcpython:side:U",
+    "D": "mcpython:side:D",
+    "A": "mcpython:side:A",
+}
+
 
 class WoodLog(Block):
     def __init__(self, *args, side=None, **kwargs):
@@ -39,39 +45,47 @@ class WoodLog(Block):
 
     def generateTEX(self):
         if self.side == SIDES["U"] or self.side == SIDES["D"]:
-            self.tex = total_tex_coords(self.getTexturFront(),
-                                        self.getTexturFront(),
-                                        self.getTexturSide(),
-                                        self.getTexturSide(),
-                                        self.getTexturSide(),
-                                        self.getTexturSide())
+            self.tex = total_tex_coords(
+                self.getTexturFront(),
+                self.getTexturFront(),
+                self.getTexturSide(),
+                self.getTexturSide(),
+                self.getTexturSide(),
+                self.getTexturSide(),
+            )
         elif self.side == SIDES["N"] or self.side == SIDES["S"]:
-            self.tex = total_tex_coords(self.getTexturSideB(),
-                                        self.getTexturSide(),
-                                        self.getTexturFront(),
-                                        self.getTexturFront(),
-                                        self.getTexturSide(),
-                                        self.getTexturSide())
+            self.tex = total_tex_coords(
+                self.getTexturSideB(),
+                self.getTexturSide(),
+                self.getTexturFront(),
+                self.getTexturFront(),
+                self.getTexturSide(),
+                self.getTexturSide(),
+            )
         elif self.side == SIDES["O"] or self.side == SIDES["W"]:
-            self.tex = total_tex_coords(self.getTexturSide(),
-                                        self.getTexturSideB(),
-                                        self.getTexturSide(),
-                                        self.getTexturSide(),
-                                        self.getTexturFront(),
-                                        self.getTexturFront())
+            self.tex = total_tex_coords(
+                self.getTexturSide(),
+                self.getTexturSideB(),
+                self.getTexturSide(),
+                self.getTexturSide(),
+                self.getTexturFront(),
+                self.getTexturFront(),
+            )
         elif self.side == SIDES["A"]:
-            self.tex = total_tex_coords(self.getTexturSide(),
-                                        self.getTexturSide(),
-                                        self.getTexturSide(),
-                                        self.getTexturSide(),
-                                        self.getTexturSide(),
-                                        self.getTexturSide())
+            self.tex = total_tex_coords(
+                self.getTexturSide(),
+                self.getTexturSide(),
+                self.getTexturSide(),
+                self.getTexturSide(),
+                self.getTexturSide(),
+                self.getTexturSide(),
+            )
         else:
             print("[ERROR] side is incorrect by wood_log")
             print("-> reseting sides...")
             self.side = SIDES["U"]
             self.generateTEX()
-            
+
     def getTexturFront(self):
         return
 
@@ -85,7 +99,16 @@ class WoodLog(Block):
         return self.tex
 
     def getInfoData(self):
-        return self.getName()+"/instance/"+str(id(self))+"/{tex="+str(self.tex)+", side="+str(self.side)+"}"
+        return (
+            self.getName()
+            + "/instance/"
+            + str(id(self))
+            + "/{tex="
+            + str(self.tex)
+            + ", side="
+            + str(self.side)
+            + "}"
+        )
 
     def getNBTNames(self):
         return ["side", "tex"]
@@ -104,13 +127,13 @@ class WoodLog(Block):
             return self.tex
 
     def getAllNBT(self):
-        return {"side":self.side}
+        return {"side": self.side}
 
     def getAllItemNBT(self):
-        return {"side":self.side}
+        return {"side": self.side}
 
     def setAllNBT(self, nbt):
-        #print(nbt, "side" in nbt.keys())
+        # print(nbt, "side" in nbt.keys())
         if "side" in nbt.keys():
             self.side = nbt["side"]
             self.generateTEX()
@@ -118,7 +141,7 @@ class WoodLog(Block):
     destroygroups = [destroyGroups.AXE]
 
     def getBlastResistence(self):
-        #todo add constant
+        # todo add constant
         return -1
 
     def getHardness(self):
@@ -126,7 +149,7 @@ class WoodLog(Block):
 
     def getId(self):
         return 17
-    
+
 
 class Wood_Log_0(WoodLog):
     def getTexturFront(self):
@@ -143,8 +166,10 @@ class Wood_Log_0(WoodLog):
 
     def getOreDictNames(self):
         return [OreDict.AcaciaLogs]
-        
+
+
 handler.register(Wood_Log_0)
+
 
 class Wood_Log_1(WoodLog):
     def getTexturFront(self):
@@ -162,7 +187,9 @@ class Wood_Log_1(WoodLog):
     def getOreDictNames(self):
         return OreDict.BirchLogs
 
+
 handler.register(Wood_Log_1)
+
 
 class Wood_Log_2(WoodLog):
     def getTexturFront(self):
@@ -180,7 +207,9 @@ class Wood_Log_2(WoodLog):
     def getOreDictNames(self):
         return [OreDict.DarkOakLogs]
 
+
 handler.register(Wood_Log_2)
+
 
 class Wood_Log_3(WoodLog):
     def getTexturFront(self):
@@ -198,7 +227,9 @@ class Wood_Log_3(WoodLog):
     def getOreDictNames(self):
         return [OreDict.JungleLogs]
 
+
 handler.register(Wood_Log_3)
+
 
 class Wood_Log_4(WoodLog):
     def getTexturFront(self):
@@ -215,5 +246,6 @@ class Wood_Log_4(WoodLog):
 
     def getOreDictNames(self):
         return [OreDict.OakLogs]
+
 
 handler.register(Wood_Log_4)

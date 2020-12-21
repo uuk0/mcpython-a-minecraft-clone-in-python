@@ -36,22 +36,95 @@ import states
 
 import Commands.Command
 
-KeyToValue = {key.A:"a", key.B:"b", key.C:"c", key.D:"d", key.E:"e", key.F:"f", key.G:"g", key.H:"h", key.I:"i",
-              key.J:"j", key.K:"k", key.L:"l", key.M:"m", key.N:"n", key.O:"o", key.P:"p", key.Q:"q", key.R:"r",
-              key.S:"s", key.T:"t", key.U:"u", key.V:"v", key.W:"w", key.X:"x", key.Y:"y", key.Z:"z", key._0:"0",
-              key._1:"1", key._2:"2", key._3:"3", key._4:"4", key._5:"5", key._6:"6", key._7:"7", key._8:"8",
-              key._9:"9", key.COMMA:",", key.MINUS:"-", key.PLUS:"+", key.SPACE:" ", key.PLUS:"+", key.MINUS:"-",
-              46:".", 35:"#", 60:"<", 949187772416:"´", 940597837824:"ß"}
+KeyToValue = {
+    key.A: "a",
+    key.B: "b",
+    key.C: "c",
+    key.D: "d",
+    key.E: "e",
+    key.F: "f",
+    key.G: "g",
+    key.H: "h",
+    key.I: "i",
+    key.J: "j",
+    key.K: "k",
+    key.L: "l",
+    key.M: "m",
+    key.N: "n",
+    key.O: "o",
+    key.P: "p",
+    key.Q: "q",
+    key.R: "r",
+    key.S: "s",
+    key.T: "t",
+    key.U: "u",
+    key.V: "v",
+    key.W: "w",
+    key.X: "x",
+    key.Y: "y",
+    key.Z: "z",
+    key._0: "0",
+    key._1: "1",
+    key._2: "2",
+    key._3: "3",
+    key._4: "4",
+    key._5: "5",
+    key._6: "6",
+    key._7: "7",
+    key._8: "8",
+    key._9: "9",
+    key.COMMA: ",",
+    key.MINUS: "-",
+    key.PLUS: "+",
+    key.SPACE: " ",
+    key.PLUS: "+",
+    key.MINUS: "-",
+    46: ".",
+    35: "#",
+    60: "<",
+    949187772416: "´",
+    940597837824: "ß",
+}
 
-Upper = {"1":"!", "2":"\"", "3":"§", "4":"$", "5":"%", "6":"&", "7":"/",
-         "8":"(", "9":")", "0":"=", "+":"*", "-":"_", ",":";", ".":":",
-         "#":"'", "<":">", "´":"`", "ß":"?"}
+Upper = {
+    "1": "!",
+    "2": '"',
+    "3": "§",
+    "4": "$",
+    "5": "%",
+    "6": "&",
+    "7": "/",
+    "8": "(",
+    "9": ")",
+    "0": "=",
+    "+": "*",
+    "-": "_",
+    ",": ";",
+    ".": ":",
+    "#": "'",
+    "<": ">",
+    "´": "`",
+    "ß": "?",
+}
 
-AltGr = {"2":"²", "3":"³", "7":"{", "8":"[", "9":"]", "0":"}", "q":"@", "e":"€", "m":"µ", "+":"~",
-         "<":"|"}
+AltGr = {
+    "2": "²",
+    "3": "³",
+    "7": "{",
+    "8": "[",
+    "9": "]",
+    "0": "}",
+    "q": "@",
+    "e": "€",
+    "m": "µ",
+    "+": "~",
+    "<": "|",
+}
+
 
 def register():
     Commands.Command.register()
+
 
 class chat:
     def __init__(self):
@@ -66,10 +139,10 @@ class chat:
         self.chat.append(msg)
         if len(self.chat) > 100:
             chat.pop(0)
-        print("[CHAT] "+str(msg))
+        print("[CHAT] " + str(msg))
 
     def warn(self, msg):
-        print("[CHAT/WARNING] "+msg)
+        print("[CHAT/WARNING] " + msg)
 
     def open(self):
         self.opened = True
@@ -101,7 +174,7 @@ class chat:
             self.chattext += value
         else:
             f = open("./exceptions.txt", mode="a")
-            f.write("\nunknown key found: "+str(symbol)+":"+str(mod)+"\n")
+            f.write("\nunknown key found: " + str(symbol) + ":" + str(mod) + "\n")
             f.close()
 
     def draw(self):
@@ -113,6 +186,7 @@ class chat:
             self.println(msg)
         return
         splitted = msg.split(" ")
-        #fehlt: datapack, function, locate, reload, scoreboard, me, say, tellraw, advancement, bossbar, data, effect, enchant, execute, experience, particel, playsound, recipi, scoreboard, spreadplayers, stopsound, tag, team, title, trigger, xp, clone,
+        # fehlt: datapack, function, locate, reload, scoreboard, me, say, tellraw, advancement, bossbar, data, effect, enchant, execute, experience, particel, playsound, recipi, scoreboard, spreadplayers, stopsound, tag, team, title, trigger, xp, clone,
+
 
 chat = chat()

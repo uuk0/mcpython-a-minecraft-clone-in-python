@@ -1,5 +1,6 @@
 from .Item import *
 
+
 class crafting_table(Item):
     def getName(self):
         return "minecraft:crafting_table"
@@ -9,5 +10,6 @@ class crafting_table(Item):
 
     def getFuelAmount(self):
         return 20
+
 
 handler.register(crafting_table)

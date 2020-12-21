@@ -1,13 +1,14 @@
 from .Block import *
 
 FACES = [
-    ( 0, 1, 0),
-    ( 0,-1, 0),
+    (0, 1, 0),
+    (0, -1, 0),
     (-1, 0, 0),
-    ( 1, 0, 0),
-    ( 0, 0, 1),
-    ( 0, 0,-1),
+    (1, 0, 0),
+    (0, 0, 1),
+    (0, 0, -1),
 ]
+
 
 class redstone_lamp_off(Block):
     def getName(self):
@@ -23,11 +24,12 @@ class redstone_lamp_off(Block):
             if npos in model.world:
                 if model.world[npos].redstone_level:
                     model.add_block(self.pos, "extra:redstone_lamp_on_private_instance")
-                    #print("[DEBUG] redstone lamp state change to high")
+                    # print("[DEBUG] redstone lamp state change to high")
 
     def redstoneStateUpdate(self, model, world):
         self.update(model, world)
 
     destroygroups = [destroyGroups.PIKAXE]
+
 
 handler.register(redstone_lamp_off)

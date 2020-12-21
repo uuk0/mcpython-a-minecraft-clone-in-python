@@ -19,4 +19,5 @@ class GoldOre(Block):
     def getId(self):
         return 14
 
+
 handler.register(GoldOre)

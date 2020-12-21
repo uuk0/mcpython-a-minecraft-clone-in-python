@@ -6,6 +6,7 @@ import traceback
 import importlib
 import globals as G
 import gameinfoloader
+
 gameinfoloader.loadData()
 
 VERSION = "0.0.2"
@@ -17,8 +18,20 @@ COMPATIBLE = [VERSION]
        added pre-loader (import)
        added data attribute to mod-class"""
 
+
 class Mod:
-    def __init__(self, dir, name, version, mcversion, mlversion, dependence, pre_init, post_init, data):
+    def __init__(
+        self,
+        dir,
+        name,
+        version,
+        mcversion,
+        mlversion,
+        dependence,
+        pre_init,
+        post_init,
+        data,
+    ):
         self.dir = dir
         self.name = name
         self.version = version
@@ -44,21 +57,30 @@ class Mod:
     def run(self):
         self.module.run()
 
+
 def creatdModInst(dir):
-    with open(dir+"/mcmod.info", mode="rb") as f:
+    with open(dir + "/mcmod.info", mode="rb") as f:
         data = pickle.load(f)
-    return Mod(dir, data["name"], data["MCPYTHON_VERSION"], data["MODLOADER_VERSION"],
-               data["DEPENDENCE"] if "DEPENDENCE" in data else [],
-               data["INIT_BEFORE"] if "INIT_BEFORE" in data else [],
-               data["INIT_AFTER"] if "INIT_AFTER" in data else [],
-               None, data)
+    return Mod(
+        dir,
+        data["name"],
+        data["MCPYTHON_VERSION"],
+        data["MODLOADER_VERSION"],
+        data["DEPENDENCE"] if "DEPENDENCE" in data else [],
+        data["INIT_BEFORE"] if "INIT_BEFORE" in data else [],
+        data["INIT_AFTER"] if "INIT_AFTER" in data else [],
+        None,
+        data,
+    )
 
 
 def printErrors(errors):
     if len(errors) == 0:
         return
     # 0:has no mcmod.info file, 1: Has the same name, 2: missing mod for dependence, 3: syntax error
-    print("SYSTEM IS NOT WORKING BECAUSE THE FOLLOWING ERRORS OCCUERS DURING LOADING THEM")
+    print(
+        "SYSTEM IS NOT WORKING BECAUSE THE FOLLOWING ERRORS OCCUERS DURING LOADING THEM"
+    )
     for modname in errors.keys():
         error = errors[modname]
         if len(error) > 0:
@@ -76,32 +98,44 @@ def printErrors(errors):
                 except:
                     pass
 
+
 def load(dir):
     localdir = dir
     print("[MODLOADER/INFO] modloader version", VERSION, "for mcpython")
     print("[MODLOADER/INFO] searching ./mods for compatible mods")
-    items = os.listdir(localdir+"/mods")
+    items = os.listdir(localdir + "/mods")
     pmoddirs = []
     for e in items:
-        if os.path.isdir(localdir+"/mods/"+e):
+        if os.path.isdir(localdir + "/mods/" + e):
             pmoddirs.append(e)
     if len(pmoddirs) == 0:
         print("[MODLOADER/INFO] found nothing")
         return
-    print("[MODLOADER/INFO] found", len(pmoddirs), "possible mod-dir(s). Analysing", "them..." if len(pmoddirs) > 1 else "it...")
+    print(
+        "[MODLOADER/INFO] found",
+        len(pmoddirs),
+        "possible mod-dir(s). Analysing",
+        "them..." if len(pmoddirs) > 1 else "it...",
+    )
     moddirs = []
     errors = {}
     for e in pmoddirs:
         errors[e] = []
-        if os.path.isfile(localdir+"/mods/"+e+"/mcmod.info"):
+        if os.path.isfile(localdir + "/mods/" + e + "/mcmod.info"):
             moddirs.append(e)
         else:
             errors[e].append(0)
-    print("[MODLOADER/INFO] found", len(moddirs), "mod(s).", "Starting loading" if len(moddirs) > 0 else "", "them..."if len(moddirs) > 1 else ("it..." if len(moddirs) > 0 else ""))
+    print(
+        "[MODLOADER/INFO] found",
+        len(moddirs),
+        "mod(s).",
+        "Starting loading" if len(moddirs) > 0 else "",
+        "them..." if len(moddirs) > 1 else ("it..." if len(moddirs) > 0 else ""),
+    )
     mods = {}
     for e in moddirs:
         print("[MODLOADER/INFO] initialisating mod", e)
-        mod = creatdModInst(localdir +"mods/"+ e)
+        mod = creatdModInst(localdir + "mods/" + e)
         if mod.name in mods.keys():
             errors[mod.name].append([1, mods[mod.name]])
             mods[mod.name].append(mod)
@@ -127,14 +161,21 @@ def load(dir):
                     if not dmod in rmodnames:
                         error.append([2, mod, dmod])
                 elif type(dmod) == list:
-                    if len(dmod) == 2: #name, minversion
-                        if (not dmod[0] in rmodnames) or (rmods[dmod[0]].version < dmod[1]):
+                    if len(dmod) == 2:  # name, minversion
+                        if (not dmod[0] in rmodnames) or (
+                            rmods[dmod[0]].version < dmod[1]
+                        ):
                             error.append([2, mod, dmod])
-                    elif len(dmod) == 3: #name, minversion, maxversion
-                        if (not dmod[0] in rmodnames) or (rmods[dmod[0]].version < dmod[1] or rmods[dmod[0]].version > dmod[2]):
+                    elif len(dmod) == 3:  # name, minversion, maxversion
+                        if (not dmod[0] in rmodnames) or (
+                            rmods[dmod[0]].version < dmod[1]
+                            or rmods[dmod[0]].version > dmod[2]
+                        ):
                             error.append([2, mod, dmod])
                     else:
-                        error.append([3, mod, "these mod has an unknown dependency:", dmod])
+                        error.append(
+                            [3, mod, "these mod has an unknown dependency:", dmod]
+                        )
             if not mod.name in errors.keys():
                 errors[mod.name] = []
             errors[mod.name] += error
@@ -161,7 +202,7 @@ def load(dir):
     for e in call_list:
         e.preload()
     print("[MODLOADER/INFO] initing mods...")
-    #print(call_list)
+    # print(call_list)
     for e in call_list:
         e.init()
     print("[MODLOADER/INFO] running main files...")
